@@ -22,7 +22,7 @@
     'name': 'OpenEduCat Support',
     'category': 'Planner',
     'summary': 'Help to configure OpenEduCat',
-    'version': '16.0.0.0.1',
+    'version': '18.0.0.0.1',
     'license': 'LGPL-3',
     "sequence": 3,
     'author': 'Tech Receptives',
