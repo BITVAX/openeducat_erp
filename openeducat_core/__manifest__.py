@@ -55,19 +55,7 @@
         #         'menu/faculty_menu.xml',
         #         'menu/student_menu.xml',
     ],
-    'demo': [
-        'demo/homepage_template.xml',
-        'demo/base_demo.xml',
-        'demo/res_partner_demo.xml',
-        'demo/res_users_demo.xml',
-        'demo/website_demo.xml',
-        'demo/course_demo.xml',
-        'demo/batch_demo.xml',
-        'demo/subject_demo.xml',
-        'demo/student_demo.xml',
-        'demo/student_course_demo.xml',
-        'demo/faculty_demo.xml',
-    ],
+    'demo': [],
     'assets': {
         # TODO: dashboard_ext.js needs full rewrite from odoo.define/Widget to ES6/OWL3
         # 'web.assets_backend': [

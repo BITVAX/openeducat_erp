@@ -4,7 +4,7 @@
         <record id="op_student_1" model="op.student">
             <field name="title" ref="base.res_partner_title_miss" />
             <field name="name">Sumita</field>
-            <field name="middle_name">S</field>
+            <field name="firstname">Sumita</field>
             <field name="lastname">Dani</field>
             <field name="gender">f</field>
             <field name="birth_date">1992-05-06</field>
@@ -13,8 +13,6 @@
             <field name="city">Banglore</field>
             <field name="country_id" ref="base.in" />
             <field name="nationality" ref="base.in" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_1" />
             <field name="image_1920" type="base64"
@@ -24,7 +22,7 @@
         <record id="op_student_2" model="op.student">
             <field name="title" ref="base.res_partner_title_mister" />
             <field name="name">Xun</field>
-            <field name="middle_name">K</field>
+            <field name="firstname">Xun</field>
             <field name="lastname">Chua</field>
             <field name="gender">m</field>
             <field name="birth_date">1989-11-05</field>
@@ -33,8 +31,6 @@
             <field name="city"></field>
             <field name="country_id" ref="base.cn" />
             <field name="nationality" ref="base.cn" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_2" />
             <field name="image_1920" type="base64"
@@ -44,7 +40,7 @@
         <record id="op_student_3" model="op.student">
             <field name="title" ref="base.res_partner_title_miss" />
             <field name="name">Liling</field>
-            <field name="middle_name">I</field>
+            <field name="firstname">Liling</field>
             <field name="lastname">Boon</field>
             <field name="gender">f</field>
             <field name="birth_date">1991-03-12</field>
@@ -53,8 +49,6 @@
             <field name="city"></field>
             <field name="country_id" ref="base.hk" />
             <field name="nationality" ref="base.hk" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_3" />
             <field name="image_1920" type="base64"
@@ -64,7 +58,7 @@
         <record id="op_student_4" model="op.student">
             <field name="title" ref="base.res_partner_title_miss" />
             <field name="name">Prachi</field>
-            <field name="middle_name">S</field>
+            <field name="firstname">Prachi</field>
             <field name="lastname">Dani</field>
             <field name="gender">f</field>
             <field name="birth_date">1991-05-16</field>
@@ -73,8 +67,6 @@
             <field name="city">Banglore</field>
             <field name="country_id" ref="base.in" />
             <field name="nationality" ref="base.in" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_4" />
             <field name="image_1920" type="base64"
@@ -84,7 +76,7 @@
         <record id="op_student_5" model="op.student">
             <field name="title" ref="base.res_partner_title_mister" />
             <field name="name">Valdez</field>
-            <field name="middle_name">L</field>
+            <field name="firstname">Valdez</field>
             <field name="lastname">Cisse</field>
             <field name="gender">m</field>
             <field name="birth_date">1991-09-12</field>
@@ -93,8 +85,6 @@
             <field name="city"></field>
             <field name="country_id" ref="base.km" />
             <field name="nationality" ref="base.km" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_5" />
             <field name="image_1920" type="base64"
@@ -104,7 +94,7 @@
         <record id="op_student_6" model="op.student">
             <field name="title" ref="base.res_partner_title_mister" />
             <field name="name">Matthew</field>
-            <field name="middle_name">K</field>
+            <field name="firstname">Matthew</field>
             <field name="lastname">Aybar</field>
             <field name="gender">m</field>
             <field name="birth_date">1990-12-12</field>
@@ -113,8 +103,6 @@
             <field name="city"></field>
             <field name="country_id" ref="base.es" />
             <field name="nationality" ref="base.es" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_6" />
             <field name="image_1920" type="base64"
@@ -124,7 +112,7 @@
         <record id="op_student_7" model="op.student">
             <field name="title" ref="base.res_partner_title_mister" />
             <field name="name">Dawid</field>
-            <field name="middle_name">L</field>
+            <field name="firstname">Dawid</field>
             <field name="lastname">Bitar</field>
             <field name="gender">m</field>
             <field name="birth_date">1990-09-01</field>
@@ -133,8 +121,6 @@
             <field name="city"></field>
             <field name="country_id" ref="base.sa" />
             <field name="nationality" ref="base.sa" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_7" />
             <field name="image_1920" type="base64"
@@ -144,7 +130,7 @@
         <record id="op_student_8" model="op.student">
             <field name="title" ref="base.res_partner_title_miss" />
             <field name="name">Laura</field>
-            <field name="middle_name">Z</field>
+            <field name="firstname">Laura</field>
             <field name="lastname">Damian</field>
             <field name="gender">f</field>
             <field name="birth_date">1990-06-10</field>
@@ -153,8 +139,6 @@
             <field name="city"></field>
             <field name="country_id" ref="base.mx" />
             <field name="nationality" ref="base.mx" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_8" />
             <field name="image_1920" type="base64"
@@ -164,7 +148,7 @@
         <record id="op_student_9" model="op.student">
             <field name="title" ref="base.res_partner_title_miss" />
             <field name="name">Rishita</field>
-            <field name="middle_name">T</field>
+            <field name="firstname">Rishita</field>
             <field name="lastname">Parikh</field>
             <field name="gender">f</field>
             <field name="birth_date">1992-05-12</field>
@@ -173,8 +157,6 @@
             <field name="city"></field>
             <field name="country_id" ref="base.in" />
             <field name="nationality" ref="base.in" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_9" />
             <field name="image_1920" type="base64"
@@ -184,7 +166,7 @@
         <record id="op_student_10" model="op.student">
             <field name="title" ref="base.res_partner_title_mister" />
             <field name="name">Abhinav</field>
-            <field name="middle_name">Y</field>
+            <field name="firstname">Abhinav</field>
             <field name="lastname">Chaudhri</field>
             <field name="gender">m</field>
             <field name="birth_date">1989-09-30</field>
@@ -193,8 +175,6 @@
             <field name="city"></field>
             <field name="country_id" ref="base.in" />
             <field name="nationality" ref="base.in" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_10" />
             <field name="image_1920" type="base64"
@@ -204,7 +184,7 @@
         <record id="op_student_11" model="op.student">
             <field name="title" ref="base.res_partner_title_mister" />
             <field name="name">Deepak</field>
-            <field name="middle_name">K</field>
+            <field name="firstname">Deepak</field>
             <field name="lastname">Jha</field>
             <field name="gender">m</field>
             <field name="birth_date">1990-07-12</field>
@@ -213,8 +193,6 @@
             <field name="city"></field>
             <field name="country_id" ref="base.in" />
             <field name="nationality" ref="base.in" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_11" />
             <field name="image_1920" type="base64"
@@ -224,7 +202,7 @@
         <record id="op_student_12" model="op.student">
             <field name="title" ref="base.res_partner_title_mister" />
             <field name="name">Hung</field>
-            <field name="middle_name">K</field>
+            <field name="firstname">Hung</field>
             <field name="lastname">Lan</field>
             <field name="gender">m</field>
             <field name="birth_date">1991-12-03</field>
@@ -233,8 +211,6 @@
             <field name="city"></field>
             <field name="country_id" ref="base.cn" />
             <field name="nationality" ref="base.cn" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_12" />
             <field name="image_1920" type="base64"
@@ -244,7 +220,7 @@
         <record id="op_student_13" model="op.student">
             <field name="title" ref="base.res_partner_title_miss" />
             <field name="name">Qiang</field>
-            <field name="middle_name">W</field>
+            <field name="firstname">Qiang</field>
             <field name="lastname">Sim</field>
             <field name="gender">f</field>
             <field name="birth_date">1990-07-02</field>
@@ -253,8 +229,6 @@
             <field name="city"></field>
             <field name="country_id" ref="base.cn" />
             <field name="nationality" ref="base.cn" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_13" />
             <field name="image_1920" type="base64"
@@ -264,7 +238,7 @@
         <record id="op_student_14" model="op.student">
             <field name="title" ref="base.res_partner_title_mister" />
             <field name="name">Hardik</field>
-            <field name="middle_name">S</field>
+            <field name="firstname">Hardik</field>
             <field name="lastname">Sharma</field>
             <field name="gender">m</field>
             <field name="birth_date">1991-03-18</field>
@@ -273,8 +247,6 @@
             <field name="city"></field>
             <field name="country_id" ref="base.in" />
             <field name="nationality" ref="base.in" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_14" />
             <field name="image_1920" type="base64"
@@ -284,7 +256,7 @@
         <record id="op_student_15" model="op.student">
             <field name="title" ref="base.res_partner_title_miss" />
             <field name="name">Shweta</field>
-            <field name="middle_name">O</field>
+            <field name="firstname">Shweta</field>
             <field name="lastname">Hasnandani</field>
             <field name="gender">f</field>
             <field name="birth_date">1991-11-02</field>
@@ -293,8 +265,6 @@
             <field name="city"></field>
             <field name="country_id" ref="base.in" />
             <field name="nationality" ref="base.in" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_15" />
             <field name="image_1920" type="base64"
@@ -304,7 +274,7 @@
         <record id="op_student_16" model="op.student">
             <field name="title" ref="base.res_partner_title_mister" />
             <field name="name">Daniel</field>
-            <field name="middle_name">W</field>
+            <field name="firstname">Daniel</field>
             <field name="lastname">Fostar</field>
             <field name="gender">m</field>
             <field name="birth_date">2003-01-06</field>
@@ -313,8 +283,6 @@
             <field name="city">Houston</field>
             <field name="country_id" ref="base.us" />
             <field name="nationality" ref="base.us" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_16" />
             <field name="image_1920" type="base64"
@@ -324,7 +292,7 @@
         <record id="op_student_17" model="op.student">
             <field name="title" ref="base.res_partner_title_miss" />
             <field name="name">Alexis</field>
-            <field name="middle_name">K</field>
+            <field name="firstname">Alexis</field>
             <field name="lastname">Smith</field>
             <field name="gender">f</field>
             <field name="birth_date">2003-12-03</field>
@@ -333,8 +301,6 @@
             <field name="city"></field>
             <field name="country_id" ref="base.us" />
             <field name="nationality" ref="base.us" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_17" />
             <field name="image_1920" type="base64"
@@ -344,7 +310,7 @@
         <record id="op_student_18" model="op.student">
             <field name="title" ref="base.res_partner_title_miss" />
             <field name="name">Mason</field>
-            <field name="middle_name">D</field>
+            <field name="firstname">Mason</field>
             <field name="lastname">Bennett</field>
             <field name="gender">f</field>
             <field name="birth_date">2003-04-03</field>
@@ -353,8 +319,6 @@
             <field name="city"></field>
             <field name="country_id" ref="base.us" />
             <field name="nationality" ref="base.us" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_18" />
             <field name="image_1920" type="base64"
@@ -364,7 +328,7 @@
         <record id="op_student_19" model="op.student">
             <field name="title" ref="base.res_partner_title_miss" />
             <field name="name">Grace</field>
-            <field name="middle_name">E</field>
+            <field name="firstname">Grace</field>
             <field name="lastname">Palmer</field>
             <field name="gender">f</field>
             <field name="birth_date">2002-03-05</field>
@@ -373,8 +337,6 @@
             <field name="city">Fort Worth</field>
             <field name="country_id" ref="base.us" />
             <field name="nationality" ref="base.us" />
-            <field name="type">contact</field>
-            <field name="customer">True</field>
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_19" />
             <field name="image_1920" type="base64"
