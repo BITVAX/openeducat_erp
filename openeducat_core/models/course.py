@@ -24,10 +24,11 @@ from odoo import api, models, fields, _
 
 class OpCourse(models.Model):
     _name = 'op.course'
+    _description = 'Course'
     _inherit = ['mail.thread']
 
-    active = fields.Boolean(track_visibility='onchange', default=True)
-    name = fields.Char('Name', required=True, track_visibility='always')
+    active = fields.Boolean(tracking=True, default=True)
+    name = fields.Char('Name', required=True, tracking=True)
     code = fields.Char('Code', size=16, required=True)
     #     parent_id = fields.Many2one('op.course', 'Parent Course')
     #     section = fields.Char('Section', size=32)
@@ -35,10 +36,10 @@ class OpCourse(models.Model):
     #         [('normal', 'Normal'), ('GPA', 'GPA'), ('CWA', 'CWA'), ('CCE', 'CCE')],
     #         'Evaluation Type', default="normal",)
     subject_ids = fields.One2many(
-        'op.subject', 'course_id', string='Subject(s)', track_visibility='onchange')
+        'op.subject', 'course_id', string='Subject(s)', tracking=True)
     batch_ids = fields.One2many(
-        'op.batch', 'course_id', string='Batch(es)', track_visibility='onchange')
-    faculty_ids = fields.Many2many('op.faculty', 'faculty_course_rel', track_visibility='onchange')
+        'op.batch', 'course_id', string='Batch(es)', tracking=True)
+    faculty_ids = fields.Many2many('op.faculty', 'faculty_course_rel', tracking=True)
     fullname = fields.Char(size=255, required=True)
     description = fields.Html(required=True)
     short_description = fields.Html(required=True)
@@ -58,6 +59,7 @@ class OpCourse(models.Model):
 
 class OpCourseTopic(models.Model):
     _name = 'op.course.topic'
+    _description = 'Course Topic'
 
     name = fields.Char()
     course_id = fields.Many2one('op.course', required=True)

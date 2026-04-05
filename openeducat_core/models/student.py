@@ -27,22 +27,19 @@ class OpStudentCourse(models.Model):
     _name = 'op.student.course'
     _description = 'Student Course Details'
 
-    name = fields.Char(compute='_compute_name')
     student_id = fields.Many2one('op.student', 'Student', ondelete="cascade")
     course_id = fields.Many2one('op.course', 'Course', required=True, ondelete='restrict')
     batch_id = fields.Many2one('op.batch', 'Batch', required=True, ondelete='restrict')
     roll_number = fields.Char('Roll Number')
     subject_ids = fields.Many2many('op.subject', string='Subjects')
 
-    def _compute_name(self):
-        for rec in self:
-            rec.name = rec.name_get()[0][1]
-
-    def name_get(self):
+    def _compute_display_name(self):
         context = self.env.context
-        if 'from_course' in context:
-            return [(rec.id, u"{} en {}".format(rec.student_id.name, rec.batch_id.name)) for rec in self]
-        return [(rec.id, rec.student_id.name) for rec in self]
+        for rec in self:
+            if 'from_course' in context:
+                rec.display_name = "{} en {}".format(rec.student_id.name, rec.batch_id.name)
+            else:
+                rec.display_name = rec.student_id.name or ''
 
     _sql_constraints = [
         ('unique_name_roll_number_id',
@@ -59,6 +56,7 @@ class OpStudentCourse(models.Model):
 
 class OpStudent(models.Model):
     _name = 'op.student'
+    _description = 'Student'
     _inherits = {'res.partner': 'partner_id'}
 
     #     first_name = fields.Char('First Name', size=128)
@@ -83,7 +81,7 @@ class OpStudent(models.Model):
     gr_no = fields.Char("GR Number", size=20)
     category_id = fields.Many2one('op.category', 'Category')
     course_detail_ids = fields.One2many('op.student.course', 'student_id',
-                                        'Course Details', track_visibility='onchange')
+                                        'Course Details', tracking=True)
 
     @api.onchange('firstname', 'lastname')
     def _onchange_name(self):
@@ -106,7 +104,8 @@ class OpStudent(models.Model):
             self.state_id = self.zip_id.city_id.state_id
             self.country_id = self.zip_id.city_id.country_id
 
-    @api.model
-    def create(self, data):
-        data['student'] = True
-        return super(OpStudent, self).create(data)
+    @api.model_create_multi
+    def create(self, vals_list):
+        for data in vals_list:
+            data['student'] = True
+        return super().create(vals_list)

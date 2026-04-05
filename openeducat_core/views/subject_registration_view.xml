@@ -7,13 +7,13 @@
             <field name="model">op.subject.registration</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
-                <tree string="Course Registration">
+                <list string="Course Registration">
                     <field name="name" />
                     <field name="student_id" />
                     <field name="course_id" />
                     <field name="batch_id" />
                     <field name="state" />
-                </tree>
+                </list>
             </field>
         </record>
 
@@ -26,18 +26,19 @@
                     <header>
                         <button name="action_submitted" string="Submit"
                             groups="openeducat_core.group_op_student"
-                            type="object" class="oe_highlight" states="draft" />
+                            type="object" class="oe_highlight"
+                            invisible="state != 'draft'" />
                         <button name="action_approve" string="Approve"
                             groups="openeducat_core.group_op_faculty"
                             type="object" class="oe_highlight"
-                            states="submitted" />
+                            invisible="state != 'submitted'" />
                         <button name="action_reject" string="Reject"
                             groups="openeducat_core.group_op_faculty"
                             type="object" class="oe_highlight"
-                            states="submitted" />
+                            invisible="state != 'submitted'" />
                         <button string="Reset to Draft" class="oe_highlight"
                             groups="openeducat_core.group_op_student"
-                            states="rejected" type="object"
+                            invisible="state != 'rejected'" type="object"
                             name="action_reset_draft"/>
                         <field name="state" widget="statusbar"
                             statusbar_visible="draft,submitted,approved,rejected" />
@@ -60,14 +61,10 @@
                                 colspan="2" />
                             <field name="elective_subject_ids" widget="many2many_tags"
                                 domain="[('subject_type', '=', 'elective')]"
-                                attrs="{'readonly':[('state','!=','draft')]}" />
+                                readonly="state != 'draft'" />
                         </group>
                     </sheet>
-                    <div class="oe_chatter">
-                        <field name="message_follower_ids" widget="mail_followers"
-                            groups="base.group_user" />
-                        <field name="message_ids" widget="mail_thread" />
-                    </div>
+                    <chatter/>
                 </form>
             </field>
         </record>
@@ -99,7 +96,7 @@
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">op.subject.registration</field>
 <!--            <field name="view_type">form</field>-->
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
             <field name="search_view_id" ref="view_subject_registration_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>

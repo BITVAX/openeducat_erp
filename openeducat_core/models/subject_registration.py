@@ -19,21 +19,22 @@
 #
 ###############################################################################
 
+from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
-from openerp import models, fields, api, _
 
 
 class OpSubjectRegistration(models.Model):
     _name = 'op.subject.registration'
+    _description = 'Subject Registration'
     _inherit = ['mail.thread']
 
     name = fields.Char('Name', readonly=True, default='New')
     student_id = fields.Many2one('op.student', 'Student', required=True,
-                                 track_visibility='onchange')
+                                 tracking=True)
     course_id = fields.Many2one('op.course', 'Course', required=True,
-                                track_visibility='onchange')
+                                tracking=True)
     batch_id = fields.Many2one('op.batch', 'Batch', required=True,
-                               track_visibility='onchange')
+                               tracking=True)
     compulsory_subject_ids = fields.Many2many(
         'op.subject', 'subject_compulsory_rel',
         'register_id', 'subject_id', string="Compulsory Subjects",
@@ -44,11 +45,11 @@ class OpSubjectRegistration(models.Model):
         ('draft', 'Draft'), ('submitted', 'Submitted'),
         ('approved', 'Approved'), ('rejected', 'Rejected')],
         default='draft', string='state', copy=False,
-        track_visibility='onchange')
+        tracking=True)
     max_unit_load = fields.Float('Maximum Unit Load',
-                                 track_visibility='onchange')
+                                 tracking=True)
     min_unit_load = fields.Float('Minimum Unit Load',
-                                 track_visibility='onchange')
+                                 tracking=True)
 
     #@api.multi
     def action_reset_draft(self):
@@ -83,12 +84,13 @@ class OpSubjectRegistration(models.Model):
     def action_submitted(self):
         self.state = 'submitted'
 
-    @api.model
-    def create(self, vals):
-        if vals.get('name', 'New') == 'New':
-            vals['name'] = self.env['ir.sequence'].next_by_code(
-                'op.subject.registration') or '/'
-        return super(OpSubjectRegistration, self).create(vals)
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            if vals.get('name', 'New') == 'New':
+                vals['name'] = self.env['ir.sequence'].next_by_code(
+                    'op.subject.registration') or '/'
+        return super().create(vals_list)
 
     #@api.multi
     def get_subjects(self):

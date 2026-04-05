@@ -25,17 +25,18 @@ from odoo.exceptions import ValidationError
 
 class OpBatch(models.Model):
     _name = 'op.batch'
-    _inherit =[ 'mail.thread' ]
+    _description = 'Batch'
+    _inherit = ['mail.thread']
 
-    active = fields.Boolean(track_visibility='onchange',default=True)
-    code = fields.Char('Code', size=16, required=True ,track_visibility='always')
-    name = fields.Char('Name', size=32, required=True ,track_visibility='onchange')
+    active = fields.Boolean(tracking=True,default=True)
+    code = fields.Char('Code', size=16, required=True ,tracking=True)
+    name = fields.Char('Name', size=32, required=True ,tracking=True)
     start_date = fields.Date(
-        'Start Date', required=True, default=fields.Date.today() ,track_visibility='onchange')
-    end_date = fields.Date('End Date' ,track_visibility='onchange')
-    course_id = fields.Many2one('op.course', 'Course', required=True ,track_visibility='onchange',ondelete='restrict')
-    faculty_ids = fields.Many2many('op.faculty','batch_faculty_rel' ,track_visibility='onchange')
-    register_ids = fields.One2many('op.student.course', 'batch_id',string='Students',track_visibility='onchange')
+        'Start Date', required=True, default=fields.Date.today() ,tracking=True)
+    end_date = fields.Date('End Date' ,tracking=True)
+    course_id = fields.Many2one('op.course', 'Course', required=True ,tracking=True,ondelete='restrict')
+    faculty_ids = fields.Many2many('op.faculty','batch_faculty_rel' ,tracking=True)
+    register_ids = fields.One2many('op.student.course', 'batch_id',string='Students',tracking=True)
     category_id = fields.Many2one('product.category',
                                   related='course_id.category_id',
                                   store=True,
