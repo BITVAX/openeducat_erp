@@ -43,14 +43,14 @@
                                 </thead>
                                 <tbody>
                                     <tr t-foreach="get_data" t-as="o">
-                                        <td class="text-left">
+                                        <td class="text-start">
                                             <span t-esc="o['name']" />
                                             <span
                                                 t-raw="'%s' %  o['middle_name'] if  o['middle_name']  else ''" />
                                             <span
                                                 t-raw="'%s' %   o['lastsname']  if  o['lastsname']  else ''" />
                                         </td>
-                                        <td class="text-left">
+                                        <td class="text-start">
                                             <span
                                                 t-raw="'%s' %   o['application_no']  if   o['application_no']   else ''" />
                                         </td>

@@ -122,13 +122,13 @@
                                         colspan="4" />
                                     <field name="course_detail_ids"
                                         nolabel="1">
-                                        <tree string="Course Details"
+                                        <list string="Course Details"
                                             editable="bottom">
                                             <field name="course_id" />
                                             <field name="batch_id"
                                                 domain="[('course_id', '=', course_id)]" />
                                             <field name="roll_number" />
-                                        </tree>
+                                        </list>
                                     </field>
                                 </group>
                             </page>

@@ -20,9 +20,11 @@
                 </form>
             </field>
         </record>
-        <act_window id="action_session_confirmation_view"
-            multi="True" name="Confirmation" res_model="session.confirmation"
-            src_model="op.session" view_mode="form" target="new"
-            view_type="form" />
+        <record id="action_session_confirmation_view" model="ir.actions.act_window">
+            <field name="name">Confirmation</field>
+            <field name="res_model">session.confirmation</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
     </data>
 </odoo>

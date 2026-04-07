@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<openerp>
+<odoo>
     <data>
 
         <record id="view_op_held_exam_form" model="ir.ui.view">
@@ -35,7 +35,6 @@
             <field name="name">Held Exam Wizard</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">op.held.exam</field>
-            <field name="view_type">form</field>
             <field name="view_mode">form</field>
             <field name="target">new</field>
         </record>
@@ -48,4 +47,4 @@
         </record>
 
     </data>
-</openerp>
+</odoo>

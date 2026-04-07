@@ -46,7 +46,6 @@ class OpBatch(models.Model):
         ('unique_batch_code',
          'unique(code,course_id)', 'Course and Code combination should be unique per batch!')]
 
-    #@api.multi
     @api.constrains('start_date', 'end_date')
     def check_dates(self):
         for record in self:

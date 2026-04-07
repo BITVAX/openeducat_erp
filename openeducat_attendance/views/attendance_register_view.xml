@@ -6,12 +6,12 @@
             <field name="model">op.attendance.register</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
-                <tree string="Attendance Register">
+                <list string="Attendance Register">
                     <field name="name" />
                     <field name="code" />
                     <field name="course_id" />
                     <field name="batch_id" />
-                </tree>
+                </list>
             </field>
         </record>
         <record id="view_op_attendance_register_form" model="ir.ui.view">
@@ -28,10 +28,7 @@
                             <field name="batch_id" context="{'course_id': course_id,'get_parent_batch':1}" />
                         </group>
                     </sheet>
-                    <div class="oe_chatter">
-                        <field name="message_follower_ids" widget="mail_followers"/>
-                        <field name="message_ids" widget="mail_thread"/>
-                    </div>
+                    <chatter/>
                 </form>
             </field>
         </record>
@@ -59,8 +56,7 @@
             <field name="name">Attendance Registers</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">op.attendance.register</field>
-            <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
             <field name="search_view_id" ref="view_op_attendance_register_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
@@ -74,7 +70,7 @@
         <record model="ir.actions.act_window.view" id="act_open_op_attendance_register_view_tree">
             <field name="act_window_id" ref="act_open_op_attendance_register_view" />
             <field name="sequence" eval="10" />
-            <field name="view_mode">tree</field>
+            <field name="view_mode">list</field>
             <field name="view_id" ref="view_op_attendance_register_tree" />
         </record>
     </data>

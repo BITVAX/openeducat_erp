@@ -61,7 +61,7 @@
                                                 <b>Class: </b>
                                                 <span t-esc="data['course_id'][1]" />
                                             </td>
-                                            <td class="text-right">
+                                            <td class="text-end">
                                                 <b>Batch:</b>
                                                 <span t-esc="data['batch_id'][1]" />
                                             </td>
@@ -78,7 +78,7 @@
                                 <br></br>
                                 <table class="table table-bordered">
                                     <thead>
-                                        <th class="text-left">PERIOD </th>
+                                        <th class="text-start">PERIOD </th>
                                         <span t-foreach="get_heading()" t-as="n">
                                             <th class="text-center"><span t-raw="n" /></th>
                                         </span>

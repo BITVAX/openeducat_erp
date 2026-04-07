@@ -7,12 +7,12 @@
             <field name="model">op.library.card.type</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
-                <tree string="Library Card Type">
+                <list string="Library Card Type">
                     <field name="name" />
                     <field name="allow_media" />
                     <field name="duration" />
                     <field name="penalty_amt_per_day" />
-                </tree>
+                </list>
             </field>
         </record>
         <record id="view_op_library_card_type_form" model="ir.ui.view">
@@ -51,8 +51,7 @@
             <field name="name">Library Card Types</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">op.library.card.type</field>
-            <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
             <field name="search_view_id" ref="view_op_library_card_type_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
@@ -66,7 +65,7 @@
         <record model="ir.actions.act_window.view" id="act_open_op_library_card_type_view_tree">
             <field name="act_window_id" ref="act_open_op_library_card_type_view" />
             <field name="sequence" eval="10" />
-            <field name="view_mode">tree</field>
+            <field name="view_mode">list</field>
             <field name="view_id" ref="view_op_library_card_type_tree" />
         </record>
         <!-- Library Card -->
@@ -75,12 +74,12 @@
             <field name="model">op.library.card</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
-                <tree string="Library Card">
+                <list string="Library Card">
                     <field name="number" />
                     <field name="issue_date" />
                     <field name="partner_id" />
                     <field name="library_card_type_id" />
-                </tree>
+                </list>
             </field>
         </record>
         <record id="view_op_library_card_form" model="ir.ui.view">
@@ -96,8 +95,8 @@
                             <field name="library_card_type_id" />
                             <field name="type" />
                             <field name="partner_id" />
-                            <field name="student_id" attrs="{'invisible':[('type','!=','student')],'required':[('type','=','student')]}" />
-                            <field name="faculty_id" attrs="{'invisible':[('type','!=','faculty')],'required':[('type','=','faculty')]}" />
+                            <field name="student_id" invisible="type != 'student'" required="type == 'student'" />
+                            <field name="faculty_id" invisible="type != 'faculty'" required="type == 'faculty'" />
                         </group>
                     </sheet>
                 </form>
@@ -123,8 +122,7 @@
             <field name="name">Library Cards</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">op.library.card</field>
-            <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
             <field name="search_view_id" ref="view_op_library_card_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
@@ -138,7 +136,7 @@
         <record model="ir.actions.act_window.view" id="act_open_op_library_card_view_tree">
             <field name="act_window_id" ref="act_open_op_library_card_view" />
             <field name="sequence" eval="10" />
-            <field name="view_mode">tree</field>
+            <field name="view_mode">list</field>
             <field name="view_id" ref="view_op_library_card_tree" />
         </record>
     </data>

@@ -19,7 +19,7 @@
 #
 ###############################################################################
 
-from openerp import models, fields, api
+from odoo import models, fields, api
 
 
 class StudentHallTicket(models.TransientModel):
@@ -30,7 +30,6 @@ class StudentHallTicket(models.TransientModel):
     exam_session_id = fields.Many2one(
         'op.exam.session', 'Exam Session', required=True)
 
-    #@api.multi
     def print_report(self):
         data = self.read(['exam_session_id'])[0]
         return self.env['report'].get_action(

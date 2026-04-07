@@ -41,7 +41,7 @@
     'images': [
         'static/description/openeducat_erp_banner.jpg',
     ],
-    'installable': True,
+    'installable': False,
     'auto_install': False,
     'application': True,
 }

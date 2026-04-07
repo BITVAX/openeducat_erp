@@ -2,7 +2,7 @@
 <odoo>
     <data>
         <menuitem id="menu_op_attendance_root" parent="openeducat_core.menu_op_school_root" name=" Attendances" sequence="50"
-            web_icon="openeducat_attendance,static/description/icon.png" />
+            />
 
 
         <menuitem id="menu_op_attendance_register_sub" name="Attendance Registers"

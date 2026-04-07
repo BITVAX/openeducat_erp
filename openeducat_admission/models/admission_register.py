@@ -31,28 +31,22 @@ class OpAdmissionRegister(models.Model):
     _description = 'Admission Register'
 
     name = fields.Char(
-        'Name', required=True, readonly=True,
-        states={'draft': [('readonly', False)]})
+        'Name', required=True, readonly=True)
     start_date = fields.Date(
         'Start Date', required=True, readonly=True,
-        default=fields.Date.today(), states={'draft': [('readonly', False)]})
+        default=fields.Date.today())
     end_date = fields.Date(
         'End Date', required=True, readonly=True,
-        default=(datetime.today() + relativedelta(days=30)),
-        states={'draft': [('readonly', False)]})
+        default=(datetime.today() + relativedelta(days=30)))
     course_id = fields.Many2one(
-        'op.course', 'Course', required=True, readonly=True,
-        states={'draft': [('readonly', False)]}, track_visibility='onchange')
+        'op.course', 'Course', required=True, readonly=True, track_visibility='onchange')
     min_count = fields.Integer(
-        'Minimum No. of Admission', readonly=True,
-        states={'draft': [('readonly', False)]})
+        'Minimum No. of Admission', readonly=True)
     max_count = fields.Integer(
-        'Maximum No. of Admission', readonly=True,
-        states={'draft': [('readonly', False)]}, default=30)
+        'Maximum No. of Admission', readonly=True, default=30)
     product_id = fields.Many2one(
         'product.product', 'Product', required=True,
-        domain=[('type', '=', 'service')], readonly=True,
-        states={'draft': [('readonly', False)]}, track_visibility='onchange')
+        domain=[('type', '=', 'service')], readonly=True, track_visibility='onchange')
     admission_ids = fields.One2many(
         'op.admission', 'register_id', 'Admissions')
     state = fields.Selection(
@@ -61,7 +55,6 @@ class OpAdmissionRegister(models.Model):
          ('admission', 'Admission Process'), ('done', 'Done')],
         'Status', default='draft', track_visibility='onchange')
 
-    #@api.multi
     @api.constrains('start_date', 'end_date')
     def check_dates(self):
         for record in self:
@@ -71,7 +64,6 @@ class OpAdmissionRegister(models.Model):
                 raise ValidationError(_("End Date cannot be set before \
                 Start Date."))
 
-    #@api.multi
     @api.constrains('min_count', 'max_count')
     def check_no_of_admission(self):
         for record in self:
@@ -81,26 +73,20 @@ class OpAdmissionRegister(models.Model):
                 raise ValidationError(_(
                     "Min Admission can't be greater than Max Admission"))
 
-    #@api.multi
     def confirm_register(self):
         self.state = 'confirm'
 
-    #@api.multi
     def set_to_draft(self):
         self.state = 'draft'
 
-    #@api.multi
     def cancel_register(self):
         self.state = 'cancel'
 
-    #@api.multi
     def start_application(self):
         self.state = 'application'
 
-    #@api.multi
     def start_admission(self):
         self.state = 'admission'
 
-    #@api.multi
     def close_register(self):
         self.state = 'done'

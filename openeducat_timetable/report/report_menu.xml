@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <report
-            id="report_student_timetable_generate"
-            string="TimeTable for Students"
-            model="op.session" report_type="qweb-pdf"
-            file="openeducat_timetable.report_timetable_student_generate"
-            name="openeducat_timetable.report_timetable_student_generate"
-            menu="False"
-            auto="False"
-        />
+        <record id="report_student_timetable_generate" model="ir.actions.report">
+            <field name="name">TimeTable for Students</field>
+            <field name="model">op.session</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">openeducat_timetable.report_timetable_student_generate</field>
+            <field name="report_file">openeducat_timetable.report_timetable_student_generate</field>
+            <field name="binding_model_id" ref="openeducat_timetable.model_op_session"/>
+            <field name="binding_type">report</field>
+        </record>
 
-        <report
-            id="report_teacher_timetable_generate"
-            string="TimeTable for Faculties"
-            model="op.session"
-            report_type="qweb-pdf"
-            file="openeducat_timetable.report_timetable_teacher_generate"
-            name="openeducat_timetable.report_timetable_teacher_generate"
-            menu="False"
-            auto="False"
-        />
+        <record id="report_teacher_timetable_generate" model="ir.actions.report">
+            <field name="name">TimeTable for Faculties</field>
+            <field name="model">op.session</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">openeducat_timetable.report_timetable_teacher_generate</field>
+            <field name="report_file">openeducat_timetable.report_timetable_teacher_generate</field>
+            <field name="binding_model_id" ref="openeducat_timetable.model_op_session"/>
+            <field name="binding_type">report</field>
+        </record>
     </data>
 </odoo>

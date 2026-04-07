@@ -29,7 +29,7 @@
                                     </h2>
                                 </div>
                                 <br></br>
-                                <div class="text-left">
+                                <div class="text-start">
                                     <b>Faculty Name :</b>
                                     <span t-esc="get_full_name(data)" />
                                 </div>
@@ -43,17 +43,17 @@
                                 <br></br>
                                 <table class="table table-bordered">
                                     <thead>
-                                        <th class="text-left">PERIOD </th>
+                                        <th class="text-start">PERIOD </th>
                                         <span t-foreach="get_heading()" t-as="n">
                                             <th class="text-center"><span t-raw="n" /></th>
                                         </span>
                                     </thead>
                                     <tbody>
                                         <tr t-foreach="get_object(data)" t-as="a">
-                                            <td class="text-left">
+                                            <td class="text-start">
                                                 <span t-esc="'%s' %  a['name'] if  a['name']  else ''" />
                                             </td>
-                                            <td class="text-left">
+                                            <td class="text-start">
                                                 <b>
                                                     <span t-esc="a['line'].get('0',{'course':''})['course']" />
                                                 </b>
@@ -67,7 +67,7 @@
                                                 <span
                                                     t-esc="a['line'].get('0',{'start_datetime':''})['start_datetime']" />
                                             </td>
-                                            <td class="text-left">
+                                            <td class="text-start">
                                                 <b>
                                                     <span t-esc="a['line'].get('1',{'course':''})['course']" />
                                                 </b>
@@ -81,7 +81,7 @@
                                                 <span
                                                     t-esc="a['line'].get('1',{'start_datetime':''})['start_datetime']" />
                                             </td>
-                                            <td class="text-left">
+                                            <td class="text-start">
                                                 <b>
                                                     <span t-esc="a['line'].get('2',{'course':''})['course']" />
                                                 </b>
@@ -96,7 +96,7 @@
                                                 <span
                                                     t-esc="a['line'].get('2',{'start_datetime':''})['start_datetime']" />
                                             </td>
-                                            <td class="text-left">
+                                            <td class="text-start">
                                                 <b>
                                                     <span t-esc="a['line'].get('3',{'course':''})['course']" />
                                                 </b>
@@ -110,7 +110,7 @@
                                                 <span
                                                     t-esc="a['line'].get('3',{'start_datetime':''})['start_datetime']" />
                                             </td>
-                                            <td class="text-left">
+                                            <td class="text-start">
                                                 <b>
                                                     <span t-esc="a['line'].get('4',{'course':''})['course']" />
                                                 </b>
@@ -124,7 +124,7 @@
                                                 <span
                                                     t-esc="a['line'].get('4',{'start_datetime':''})['start_datetime']" />
                                             </td>
-                                            <td class="text-left">
+                                            <td class="text-start">
                                                 <b>
                                                     <span t-esc="a['line'].get('5',{'course':''})['course']" />
                                                 </b>
@@ -138,7 +138,7 @@
                                                 <span
                                                     t-esc="a['line'].get('5',{'start_datetime':''})['start_datetime']" />
                                             </td>
-                                            <td class="text-left">
+                                            <td class="text-start">
                                                 <b>
                                                     <span t-esc="a['line'].get('6',{'course':''})['course']" />
                                                 </b>

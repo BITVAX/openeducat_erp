@@ -117,27 +117,27 @@
                                                             t-as="result">
                                                             <tr>
                                                                 <td
-                                                                    class="text-left">
+                                                                    class="text-start">
                                                                     <span
                                                                         t-raw="'%s' % result.exam_id.subject_id.name if result.exam_id.subject_id.name else ''" />
                                                                 </td>
                                                                 <td
-                                                                    class="text-left">
+                                                                    class="text-start">
                                                                     <span
                                                                         t-raw="'%s' % result.exam_id.session_id.exam_type.name if result.exam_id.session_id.exam_type.name else ''" />
                                                                 </td>
                                                                 <td
-                                                                    class="text-right">
+                                                                    class="text-end">
                                                                     <span
                                                                         t-raw="'%s' % result.exam_id.total_marks if result.exam_id.total_marks else ''" />
                                                                 </td>
                                                                 <td
-                                                                    class="text-right">
+                                                                    class="text-end">
                                                                     <span
                                                                         t-raw="'%s' %  result.exam_id.min_marks if  result.exam_id.min_marks else ''" />
                                                                 </td>
                                                                 <td
-                                                                    class="text-right">
+                                                                    class="text-end">
                                                                     <span
                                                                         t-raw="'%s' % result.marks if result.marks else '--'" />
                                                                 </td>
@@ -275,12 +275,12 @@
                                                         <t t-foreach="line.result_line" t-as="result">
                                                             <tr>
                                                                 <td
-                                                                    class="text-left">
+                                                                    class="text-start">
                                                                     <span
                                                                         t-raw="'%s' % result.exam_id.subject_id.name if result.exam_id.subject_id.name else ''" />
                                                                 </td>
                                                                 <td
-                                                                    class="text-left">
+                                                                    class="text-start">
                                                                     <span
                                                                         t-raw="'%s' % result.exam_id.session_id.exam_type.name if result.exam_id.session_id.exam_type.name else ''" />
                                                                 </td>

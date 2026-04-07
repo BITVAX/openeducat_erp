@@ -6,7 +6,7 @@
             <field name="model">op.attendance.line</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
-                <tree string="Attendance Line">
+                <list string="Attendance Line">
                     <field name="attendance_id" />
                     <field name="student_id" />
                     <field name="present" />
@@ -14,7 +14,7 @@
                     <field name="attendance_date" />
                     <field name="course_id" />
                     <field name="batch_id" />
-                </tree>
+                </list>
             </field>
         </record>
         <record id="view_op_attendance_line_form" model="ir.ui.view">
@@ -34,10 +34,7 @@
                             <field name="attendance_date" />
                         </group>
                     </sheet>
-                    <div class="oe_chatter">
-                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
-                        <field name="message_ids" widget="mail_thread"/>
-                    </div>
+                    <chatter/>
                 </form>
             </field>
         </record>
@@ -67,8 +64,7 @@
             <field name="name">Attendance Line</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">op.attendance.line</field>
-            <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
             <field name="search_view_id" ref="view_op_attendance_line_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
@@ -82,7 +78,7 @@
         <record model="ir.actions.act_window.view" id="act_open_op_attendance_line_view_tree">
             <field name="act_window_id" ref="act_open_op_attendance_line_view" />
             <field name="sequence" eval="10" />
-            <field name="view_mode">tree</field>
+            <field name="view_mode">list</field>
             <field name="view_id" ref="view_op_attendance_line_tree" />
         </record>
     </data>

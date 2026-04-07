@@ -42,7 +42,7 @@ class OpFeesTerms(models.Model):
                                 'Type')
     line_ids = fields.One2many('op.fees.terms.line', 'fees_id', 'Terms')
 
-    @api.model
+    @api.model_create_multi
     def create(self, vals):
         res = super(OpFeesTerms, self).create(vals)
         if not res.line_ids:

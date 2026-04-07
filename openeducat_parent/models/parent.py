@@ -31,7 +31,7 @@ class OpParent(models.Model):
                               string='User', store=True)
     student_ids = fields.Many2many('op.student', string='Student(s)')
 
-    @api.model
+    @api.model_create_multi
     def create(self, vals):
         res = super(OpParent, self).create(vals)
         if vals.get('student_ids', False) and res.name.user_id:
@@ -41,7 +41,6 @@ class OpParent(models.Model):
             res.user_id.child_ids = [(6, 0, user_ids)]
         return res
 
-    #@api.multi
     def write(self, vals):
         for record in self:
             res = super(OpParent, self).write(vals)
@@ -53,14 +52,12 @@ class OpParent(models.Model):
             record.clear_caches()
             return res
 
-    #@api.multi
     def unlink(self):
         for record in self:
             if record.name.user_id:
                 record.user_id.child_ids = [(6, 0, [])]
             return super(OpParent, self).unlink()
 
-    #@api.multi
     def create_parent_user(self):
         for record in self:
             if not record.name.email:
@@ -85,7 +82,7 @@ class OpStudent(models.Model):
 
     parent_ids = fields.Many2many('op.parent', string='Parent')
 
-    @api.model
+    @api.model_create_multi
     def create(self, vals):
         res = super(OpStudent, self).create(vals)
         if vals.get('parent_ids', False):
@@ -96,7 +93,6 @@ class OpStudent(models.Model):
                     parent_id.user_id.child_ids = [(6, 0, user_ids)]
         return res
 
-    #@api.multi
     def write(self, vals):
         res = super(OpStudent, self).write(vals)
         if vals.get('parent_ids', False):
@@ -122,7 +118,6 @@ class OpStudent(models.Model):
         self.clear_caches()
         return res
 
-    #@api.multi
     def unlink(self):
         for record in self:
             if record.parent_ids:
@@ -136,14 +131,13 @@ class OpStudent(models.Model):
 class OpSubjectRegistration(models.Model):
     _inherit = 'op.subject.registration'
 
-    @api.model
+    @api.model_create_multi
     def create(self, vals):
         if self.env.user.child_ids:
             raise Warning(_('Invalid Action!\n Parent can not \
             create Subject Registration!'))
         return super(OpSubjectRegistration, self).create(vals)
 
-    #@api.multi
     def write(self, vals):
         if self.env.user.child_ids:
             raise Warning(_('Invalid Action!\n Parent can not edit \

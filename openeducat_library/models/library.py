@@ -65,7 +65,7 @@ class OpLibraryCard(models.Model):
          'unique(number)', 'Library card Number should be unique per card!'),
     ]
 
-    @api.model
+    @api.model_create_multi
     def create(self, vals):
         x = self.env['ir.sequence'].next_by_code(
             'op.library.card') or '/'

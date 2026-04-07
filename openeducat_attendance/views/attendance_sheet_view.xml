@@ -6,14 +6,14 @@
             <field name="model">op.attendance.sheet</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
-                <tree string="Attendance Sheet">
+                <list string="Attendance Sheet">
                     <field name="register_id" />
                     <field name="name" />
                     <field name="session_id" />
                     <field name="attendance_date" />
                     <field name="total_present" />
                     <field name="total_absent" />
-                </tree>
+                </list>
             </field>
         </record>
         <record id="view_op_attendance_sheet_form" model="ir.ui.view">
@@ -33,20 +33,17 @@
                         </group>
                         <group col="4" string="Students">
                             <field name="attendance_line" colspan="4" nolabel="1">
-                                <tree string="Attendance Line" editable="top">
+                                <list string="Attendance Line" editable="top">
                                     <field name="student_id" domain="[('course_detail_ids.course_id','=',parent.course_id),('course_detail_ids.batch_id','=',parent.batch_id)]" />
                                     <field name="present" />
                                     <field name="remark" />
-                                </tree>
+                                </list>
                             </field>
                             <field name="total_present" />
                             <field name="total_absent" />
                         </group>
                     </sheet>
-                    <div class="oe_chatter">
-                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
-                        <field name="message_ids" widget="mail_thread"/>
-                    </div>
+                    <chatter/>
                 </form>
             </field>
         </record>
@@ -73,8 +70,7 @@
             <field name="name">Attendance Sheets</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">op.attendance.sheet</field>
-            <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
             <field name="search_view_id" ref="view_op_attendance_sheet_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
@@ -88,7 +84,7 @@
         <record model="ir.actions.act_window.view" id="act_open_op_attendance_sheet_view_tree">
             <field name="act_window_id" ref="act_open_op_attendance_sheet_view" />
             <field name="sequence" eval="10" />
-            <field name="view_mode">tree</field>
+            <field name="view_mode">list</field>
             <field name="view_id" ref="view_op_attendance_sheet_tree" />
         </record>
     </data>

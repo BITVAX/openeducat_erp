@@ -29,7 +29,6 @@ from odoo import models, api, _
 class ReportTimetableStudentGenerate(models.AbstractModel):
     _name = 'report.openeducat_timetable.report_timetable_student_generate'
 
-    #@api.multi
     def _convert_to_local_timezone(self, time):
         '''
             Converts time as per local timezone.

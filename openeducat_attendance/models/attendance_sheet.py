@@ -26,14 +26,12 @@ class OpAttendanceSheet(models.Model):
     _name = 'op.attendance.sheet'
     _inherit = ['mail.thread']
 
-    #@api.multi
     @api.depends('attendance_line.present')
     def _compute_total_present(self):
         for record in self:
             record.total_present = self.env['op.attendance.line'].search_count(
                 [('present', '=', True), ('attendance_id', '=', record.id)])
 
-    #@api.multi
     @api.depends('attendance_line.present')
     def _compute_total_absent(self):
         for record in self:

@@ -27,88 +27,48 @@ class OpStudentFeesDetails(models.Model):
     _description = 'Student Fees Details'
 
     fees_line_id = fields.Many2one('op.fees.terms.line', 'Fees Line')
-    invoice_id = fields.Many2one('account.invoice', 'Invoice')
+    invoice_id = fields.Many2one('account.move', 'Invoice')
     amount = fields.Float('Fees Amount')
     date = fields.Date('Submit Date')
     product_id = fields.Many2one('product.product', 'Product')
     student_id = fields.Many2one('op.student', 'Student')
     state = fields.Selection([
         ('draft', 'Draft'), ('invoice', 'Invoice Created')], 'Status')
-    invoice_state = fields.Selection([
-        ('draft', 'Draft'), ('proforma', 'Pro-forma'),
-        ('proforma2', 'Pro-forma'), ('open', 'Open'),
-        ('paid', 'Paid'), ('cancel', 'Cancelled')], 'State',
-        related="invoice_id.state", readonly=True)
+    invoice_state = fields.Selection(
+        related="invoice_id.state", string='Invoice State', readonly=True)
 
-    #@api.multi
     def get_invoice(self):
-        """ Create invoice for fee payment process of student """
-
-        inv_obj = self.env['account.invoice']
-        partner_id = self.student_id.partner_id
-        student = self.student_id
-
-        account_id = False
-        product = self.product_id
-        if product.property_account_income_id:
-            account_id = product.property_account_income_id.id
-        if not account_id:
-            account_id = product.categ_id.property_account_income_categ_id.id
-        if not account_id:
-            raise UserError(
-                _('There is no income account defined for this product: "%s". \
-                   You may have to install a chart of account from Accounting \
-                   app, settings menu.') % (product.name,))
-
+        """Create invoice for fee payment process of student."""
         if self.amount <= 0.00:
-            raise UserError(_('The value of the deposit amount must be \
-                             positive.'))
-        else:
-            amount = self.amount
-            name = product.name
-
-        invoice = inv_obj.create({
-            'name': student.name,
-            'origin': student.gr_no or False,
-            'type': 'out_invoice',
-            'reference': False,
-            'account_id': partner_id.property_account_receivable_id.id,
-            'partner_id': partner_id.id,
+            raise UserError(_('The value of the deposit amount must be positive.'))
+        partner = self.student_id.partner_id
+        invoice = self.env['account.move'].create({
+            'move_type': 'out_invoice',
+            'ref': self.student_id.gr_no or False,
+            'partner_id': partner.id,
             'invoice_line_ids': [(0, 0, {
-                'name': name,
-                'origin': student.gr_no,
-                'account_id': account_id,
-                'price_unit': amount,
+                'name': self.product_id.name,
+                'price_unit': self.amount,
                 'quantity': 1.0,
-                'discount': 0.0,
-                'uom_id': product.uom_id.id,
-                'product_id': product.id,
+                'product_id': self.product_id.id,
+                'product_uom_id': self.product_id.uom_id.id,
             })],
         })
-        invoice.compute_taxes()
         self.state = 'invoice'
         self.invoice_id = invoice.id
         return True
 
     def action_get_invoice(self):
-        value = True
         if self.invoice_id:
-            form_view = self.env.ref('account.invoice_form')
-            tree_view = self.env.ref('account.invoice_tree')
-            value = {
-                'domain': str([('id', '=', self.invoice_id.id)]),
-                'view_type': 'form',
+            return {
+                'domain': [('id', '=', self.invoice_id.id)],
                 'view_mode': 'form',
-                'res_model': 'account.invoice',
-                'view_id': False,
-                'views': [(form_view and form_view.id or False, 'form'),
-                          (tree_view and tree_view.id or False, 'tree')],
+                'res_model': 'account.move',
                 'type': 'ir.actions.act_window',
                 'res_id': self.invoice_id.id,
                 'target': 'current',
-                'nodestroy': True
             }
-        return value
+        return True
 
 
 class OpStudent(models.Model):

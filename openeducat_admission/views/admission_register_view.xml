@@ -6,7 +6,7 @@
             <field name="model">op.admission.register</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
-                <tree string="Admission Register">
+                <list string="Admission Register">
                     <field name="name" />
                     <field name="course_id" />
                     <field name="start_date" />
@@ -15,7 +15,7 @@
                     <field name="max_count" />
                     <field name="product_id" />
                     <field name="state" />
-                </tree>
+                </list>
             </field>
         </record>
         <record id="view_op_admission_register_form" model="ir.ui.view">
@@ -25,17 +25,17 @@
             <field name="arch" type="xml">
                 <form string="Admission Register">
                     <header groups="base.group_user">
-                        <button name="confirm_register" states="draft" type="object"
+                        <button name="confirm_register" invisible="state == 'draft'" type="object"
                             string="Confirm" class="oe_highlight"/>
-                        <button name="start_application" states="confirm" type="object"
+                        <button name="start_application" invisible="state == 'confirm'" type="object"
                             string="Start Application" class="oe_highlight"/>
-                        <button name="start_admission" states="application" type="object"
+                        <button name="start_admission" invisible="state == 'application'" type="object"
                             string="Start Admission" class="oe_highlight"/>
-                        <button name="close_register" states="admission" type="object"
+                        <button name="close_register" invisible="state == 'admission'" type="object"
                             string="Done" class="oe_highlight" />
-                        <button name="cancel_register" states="draft,confirm" string="Cancel"
+                        <button name="cancel_register" invisible="state not in ('draft', 'confirm')" string="Cancel"
                             type="object" />
-                        <button name="set_to_draft" states="cancel" string="Set to Draft"
+                        <button name="set_to_draft" invisible="state == 'cancel'" string="Set to Draft"
                             type="object" />
                         <field name="state" widget="statusbar" statusbar_visible="draft,confirm,application,admission,done" />
                     </header>
@@ -53,10 +53,7 @@
                             <field name="admission_ids" nolabel="1" readonly="1" />
                         </group>
                     </sheet>
-                    <div class="oe_chatter">
-                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
-                        <field name="message_ids" widget="mail_thread"/>
-                    </div>
+                    <chatter/>
                 </form>
             </field>
         </record>
@@ -83,8 +80,7 @@
             <field name="name">Admission Registers</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">op.admission.register</field>
-            <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
             <field name="search_view_id" ref="view_op_admission_register_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
@@ -98,7 +94,7 @@
         <record model="ir.actions.act_window.view" id="act_open_op_admission_register_view_tree">
             <field name="act_window_id" ref="act_open_op_admission_register_view" />
             <field name="sequence" eval="10" />
-            <field name="view_mode">tree</field>
+            <field name="view_mode">list</field>
             <field name="view_id" ref="view_op_admission_register_tree" />
         </record>
     </data>

@@ -2,7 +2,7 @@
 <odoo>
     <data>
         <menuitem id="menu_op_student_root" name="Students"
-            parent="openeducat_core.menu_op_school_root" sequence="10" web_icon="openeducat_core,static/description/icon_student.png"/>
+            parent="openeducat_core.menu_op_school_root" sequence="10"/>
         <menuitem action="act_open_op_student_view"
             groups="group_op_faculty" id="menu_op_school_main"
             name="Students" parent="menu_op_student_root" sequence="10"/>

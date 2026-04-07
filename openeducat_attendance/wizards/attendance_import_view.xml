@@ -24,8 +24,11 @@
                 </form>
             </field>
         </record>
-        <act_window id="op_all_student_act" name="Attandance Sheet Import"
-            res_model="op.all.student" src_model="op.attendance.sheet"
-            view_mode="form" target="new" view_type="form" />
+        <record id="op_all_student_act" model="ir.actions.act_window">
+            <field name="name">Attandance Sheet Import</field>
+            <field name="res_model">op.all.student</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
     </data>
 </odoo>

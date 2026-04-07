@@ -18,7 +18,7 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ###############################################################################
-from openerp import models, api, fields
+from odoo import models, api, fields
 
 
 class OpHeldExam(models.TransientModel):
@@ -45,7 +45,6 @@ class OpHeldExam(models.TransientModel):
         })
         return res
 
-    #@api.multi
     def held_exam(self):
         for record in self:
             if record.attendees_line:

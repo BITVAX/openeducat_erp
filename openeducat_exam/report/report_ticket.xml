@@ -84,7 +84,7 @@
                                 </thead>
                                 <tbody>
                                     <tr t-foreach="o['line']" t-as='s'>
-                                        <td class="text-left">
+                                        <td class="text-start">
                                             <span
                                                 t-raw="'%s' %  s['subject'] if  s['subject']  else ''" />
                                         </td>
@@ -95,7 +95,7 @@
                                         <td class="text-center">
                                             <span t-esc="s['time']" />
                                         </td>
-                                        <td class="text-left">
+                                        <td class="text-start">
                                             <span
                                                 t-raw="'%s' %   s['sup_sign']  if  s['sup_sign']  else ''" />
                                         </td>

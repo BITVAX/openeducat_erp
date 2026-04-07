@@ -43,4 +43,5 @@
     'depends': [
         'website',
     ],
+    'installable': False,
 }

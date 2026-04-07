@@ -18,7 +18,7 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ###############################################################################
-from openerp import models, api, fields, exceptions, _
+from odoo import models, api, fields, exceptions, _
 
 
 class OpRoomDistribution(models.TransientModel):
@@ -26,7 +26,6 @@ class OpRoomDistribution(models.TransientModel):
     """ Exam Room Distribution """
     _name = 'op.room.distribution'
 
-    #@api.multi
     @api.depends('student_ids')
     def _compute_get_total_student(self):
         for record in self:
@@ -35,7 +34,6 @@ class OpRoomDistribution(models.TransientModel):
                 total_student = len(record.student_ids)
             record.total_student = total_student
 
-    #@api.multi
     @api.depends('room_ids', 'room_ids.capacity')
     def _compute_get_room_capacity(self):
         for record in self:
@@ -91,7 +89,6 @@ class OpRoomDistribution(models.TransientModel):
         })
         return res
 
-    #@api.multi
     def schedule_exam(self):
         for exam in self:
             if exam.total_student > exam.room_capacity:

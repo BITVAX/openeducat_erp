@@ -46,26 +46,22 @@ class OpMediaPurchase(models.Model):
         default='draft', track_visibility='onchange')
     media_type_id = fields.Many2one('op.media.type', 'Media Type')
 
-    #@api.multi
     def act_requested(self):
         self.state = 'request'
 
-    #@api.multi
     def act_accept(self):
         self.state = 'accept'
 
-    #@api.multi
     def act_reject(self):
         self.state = 'reject'
 
-    @api.model
+    @api.model_create_multi
     def create(self, vals):
         if self.env.user.child_ids:
             raise Warning(_('Invalid Action!\n Parent can not create \
             Media Purchase Requests!'))
         return super(OpMediaPurchase, self).create(vals)
 
-    #@api.multi
     def write(self, vals):
         if self.env.user.child_ids:
             raise Warning(_('Invalid Action!\n Parent can not edit \

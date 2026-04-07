@@ -6,14 +6,14 @@
             <field name="model">op.media.queue</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
-                <tree string="Media Queue Request">
+                <list string="Media Queue Request">
                     <field name='name'/>
                     <field name="media_id"/>
                     <field name="user_id" />
                     <field name="date_from" />
                     <field name="date_to" />
                     <field name="state" />
-                </tree>
+                </list>
             </field>
         </record>
 
@@ -25,13 +25,13 @@
                 <form string="media Queue Request">
                     <header groups="base.group_user">
                         <button name="do_accept" string="Accept" type="object"
-                            states="request" class="oe_highlight"
+                            invisible="state == 'request'" class="oe_highlight"
                             groups="openeducat_core.group_op_back_office_admin,openeducat_library.group_op_library" />
                         <button name="do_reject" string="Reject" type="object"
-                            states="request,accept"
+                            invisible="state not in ('request', 'accept')"
                             groups="openeducat_core.group_op_back_office_admin,openeducat_library.group_op_library" />
                         <button name="do_request_again" string="Request Again"
-                            states="reject" type="object"
+                            invisible="state == 'reject'" type="object"
                             groups="openeducat_core.group_op_faculty,openeducat_core.group_op_student" />
                         <field name="state" widget="statusbar" statusbar_visible="request,reject,accept"
                             statusbar_colors='{"reject":"red"}' />
@@ -47,10 +47,7 @@
                             <field name="date_to" />
                         </group>
                     </sheet>
-                    <div class="oe_chatter">
-                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
-                        <field name="message_ids" widget="mail_thread"/>
-                    </div>
+                    <chatter/>
                 </form>
             </field>
         </record>
@@ -78,8 +75,7 @@
             <field name="name">Media Queue Requests</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">op.media.queue</field>
-            <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
             <field name="search_view_id" ref="view_op_media_queue_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
@@ -93,7 +89,7 @@
         <record model="ir.actions.act_window.view" id="act_open_op_media_queue_view_tree">
             <field name="act_window_id" ref="act_open_op_media_queue_view" />
             <field name="sequence" eval="10" />
-            <field name="view_mode">tree</field>
+            <field name="view_mode">list</field>
             <field name="view_id" ref="view_op_media_queue_tree" />
         </record>
 

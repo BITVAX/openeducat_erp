@@ -31,10 +31,14 @@
     'data': [
         'views/web_planner_templates.xml',
     ],
-    'qweb': ['static/src/xml/web_planner.xml', 'static/src/xml/web.xml'],
+    'assets': {
+        'web.assets_backend': [
+            'openeducat_support/static/src/js/user_menu.js',
+        ],
+    },
     'images': [
         'static/description/openeducat_support_banner.jpg',
     ],
-    'installable': True,
+    'installable': False,
     'auto_install': False,
 }

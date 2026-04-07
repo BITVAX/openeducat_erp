@@ -18,7 +18,7 @@
                         </div>
                         <br></br>
                         <br></br>
-                        <div class="text-left">
+                        <div class="text-start">
                             <b>Student Name :</b>
                             <span t-esc="get_student_name" />
                         </div>

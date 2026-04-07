@@ -5,10 +5,10 @@
             <field name="name">op.facility.line.tree</field>
             <field name="model">op.facility.line</field>
             <field name="arch" type="xml">
-                <tree string="Facilities">
+                <list string="Facilities">
                     <field name="facility_id" />
                     <field name="quantity" />
-                </tree>
+                </list>
             </field>
         </record>
         <record id="op_facility_line_form_view" model="ir.ui.view">

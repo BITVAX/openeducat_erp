@@ -51,32 +51,26 @@ class OpAssignmentSubLine(models.Model):
         'res.users', related='assignment_id.faculty_id.user_id',
         string='Faculty User')
 
-    #@api.multi
     def act_draft(self):
         result = self.state = 'draft'
         return result and result or False
 
-    #@api.multi
     def act_submit(self):
         result = self.state = 'submit'
         return result and result or False
 
-    #@api.multi
     def act_accept(self):
         result = self.state = 'accept'
         return result and result or False
 
-    #@api.multi
     def act_change_req(self):
         result = self.state = 'change'
         return result and result or False
 
-    #@api.multi
     def act_reject(self):
         result = self.state = 'reject'
         return result and result or False
 
-    @api.multi
     def unlink(self):
         for record in self:
             if not record.state == 'draft' and not self.env.user.has_group(
@@ -86,14 +80,13 @@ class OpAssignmentSubLine(models.Model):
         res = super(OpAssignmentSubLine, self).unlink()
         return res
 
-    @api.model
+    @api.model_create_multi
     def create(self, vals):
         if self.env.user.child_ids:
             raise Warning(_('Invalid Action!\n Parent can not \
             create Assignment Submissions!'))
         return super(OpAssignmentSubLine, self).create(vals)
 
-    @api.multi
     def write(self, vals):
         if self.env.user.child_ids:
             raise Warning(_('Invalid Action!\n Parent can not edit \

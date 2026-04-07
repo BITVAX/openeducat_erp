@@ -10,7 +10,7 @@
                 <notebook position="inside">
                     <page name="assignments" string="Assignments">
                         <field name="allocation_ids" colspan="4" nolabel="1">
-                            <tree string="Assignment">
+                            <list string="Assignment">
                                 <field name="name" />
                                 <field name="course_id" />
                                 <field name="batch_id" />
@@ -22,7 +22,7 @@
                                 <field name="state" />
                                 <field name="issued_date" />
                                 <field name="submission_date" />
-                            </tree>
+                            </list>
                         </field>
                     </page>
                 </notebook>

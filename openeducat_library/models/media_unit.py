@@ -45,7 +45,7 @@ class OpMediaUnit(models.Model):
          'Barcode must be unique per Media unit!'),
     ]
 
-    @api.model
+    @api.model_create_multi
     def create(self, vals):
         x = self.env['ir.sequence'].next_by_code(
             'op.media.unit') or '/'
@@ -62,4 +62,4 @@ class OpMediaUnit(models.Model):
         if not recs:
             recs = self.search(
                 [('barcode', operator, name)] + args, limit=limit)
-        return recs.name_get()
+        return recs._compute_display_name()

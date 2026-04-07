@@ -68,7 +68,6 @@ class OpMediaMovement(models.Model):
         'res.users', related='student_id.user_id', string='Users')
     invoice_id = fields.Many2one('account.invoice', 'Invoice', readonly=True)
 
-    #@api.multi
     def get_diff_day(self):
         for media_mov_id in self:
             today_date = datetime.strptime(fields.Date.today(), '%Y-%m-%d')
@@ -103,7 +102,6 @@ class OpMediaMovement(models.Model):
         self.return_date = date.today() + \
             timedelta(days=self.library_card_id.library_card_type_id.duration)
 
-    #@api.multi
     def issue_media(self):
         ''' function to issue media '''
         for record in self:
@@ -112,7 +110,6 @@ class OpMediaMovement(models.Model):
                 record.media_unit_id.state = 'issue'
                 record.state = 'issue'
 
-    #@api.multi
     def return_media(self, return_date):
         for record in self:
             if not return_date:
@@ -125,7 +122,6 @@ class OpMediaMovement(models.Model):
                 record.state = 'return_done'
             record.media_unit_id.state = 'available'
 
-    #@api.multi
     def calculate_penalty(self):
         for record in self:
             penalty_amt = 0
@@ -143,7 +139,6 @@ class OpMediaMovement(models.Model):
                     penalty_amt_per_day
             record.write({'penalty': penalty_amt})
 
-    #@api.multi
     def create_penalty_invoice(self):
         for rec in self:
             account_id = False

@@ -223,7 +223,7 @@
                 <section class="well1 bg-variant-1">
                     <div class="container">
                         <h3>Current Students</h3>
-                        <div class="row flow-offset-3 text-left mt64">
+                        <div class="row flow-offset-3 text-start mt64">
 
                             <div class="col-sm-3 col-xs-12 col-md-3 mt32">
                                 <div class="thumbnail-1 bg-success">
@@ -496,7 +496,7 @@
                         <div class="row">
                             <div
                                     class="col-md-12 col-sm-12 col-xs-12 testimonial-bg pad60">
-                                <div class="mb32 white text-left">
+                                <div class="mb32 white text-start">
                                     <h2 class="section-title text-white">
                                         Parents Testimonials
                                         <span>Lorem ipsum dolor sit amet

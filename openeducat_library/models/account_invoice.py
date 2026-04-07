@@ -27,7 +27,6 @@ class AccountInvoice(models.Model):
 
     _inherit = "account.invoice"
 
-    #@api.multi
     def action_invoice_paid(self):
         paid_invoice = super(AccountInvoice, self).action_invoice_paid()
         if paid_invoice and self:

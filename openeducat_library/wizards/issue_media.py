@@ -73,7 +73,6 @@ class IssueMedia(models.TransientModel):
         else:
             return False
 
-    #@api.multi
     def do_issue(self):
         for media in self:
             value = {}

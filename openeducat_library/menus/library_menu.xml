@@ -3,7 +3,7 @@
     <data>
         <menuitem id="menu_op_library_root" parent="openeducat_core.menu_op_school_root" name="Library"
             sequence="80"
-            web_icon="openeducat_library,static/description/icon.png" />
+            />
 
         <menuitem id="menu_library_medias" name="All Media"
             parent="menu_op_library_root" sequence="20"/>

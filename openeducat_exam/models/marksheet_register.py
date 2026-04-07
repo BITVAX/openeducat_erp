@@ -60,7 +60,6 @@ class OpMarksheetRegister(models.Model):
         if (self.total_pass < 0.0) or (self.total_failed < 0.0):
             raise ValidationError(_('Enter proper pass or fail!'))
 
-    #@api.multi
     @api.depends('marksheet_line.status')
     def _compute_total_pass(self):
         for record in self:
@@ -70,7 +69,6 @@ class OpMarksheetRegister(models.Model):
                     count += 1
             record.total_pass = count
 
-    #@api.multi
     @api.depends('marksheet_line.status')
     def _compute_total_failed(self):
         for record in self:
@@ -80,14 +78,11 @@ class OpMarksheetRegister(models.Model):
                     count += 1
             record.total_failed = count
 
-    #@api.multi
     def action_validate(self):
         self.state = 'validated'
 
-    #@api.multi
     def act_cancel(self):
         self.state = 'cancelled'
 
-    #@api.multi
     def act_draft(self):
         self.state = 'draft'
