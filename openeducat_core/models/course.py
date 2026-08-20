@@ -44,8 +44,14 @@ class OpCourse(models.Model):
     description = fields.Html(required=True)
     short_description = fields.Html(required=True)
     summary = fields.Html()
-    category_ids = fields.Many2many('product.category', required=True)
-    category_id = fields.Many2one('product.category', required=True)
+    # Fork BITVAX (forum, #3788): el árbol académico vive en las categorías
+    # públicas del conector Magento, no en el product.category contable. La
+    # rel del M2M va explícita porque las BD desplegadas ya la tienen con
+    # este nombre; el autogenerado sería otro y perdería los enlaces.
+    category_ids = fields.Many2many('product.category.public',
+                                    'op_course_category_public_rel',
+                                    required=True)
+    category_id = fields.Many2one('product.category.public', required=True)
 
     topic_ids = fields.One2many('op.course.topic', 'course_id')
 

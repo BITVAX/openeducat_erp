@@ -27,7 +27,7 @@
     'summary': 'Manage Students, Faculties and Education Institute',
     'author': 'Tech Receptives',
     'website': 'http://www.openeducat.org',
-    'depends': ['board', 'hr', 'web', 'product', 'base_location', 'partner_firstname', 'account', 'website'],
+    'depends': ['board', 'hr', 'web', 'product', 'base_location', 'partner_firstname', 'account', 'connector_magento'],
     'data': [
         'report/report_menu.xml',
         'report/report_student_bonafide.xml',

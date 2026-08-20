@@ -11,7 +11,7 @@ class TestOpeneducatCore(TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.categ = cls.env['product.category'].create({'name': 'Edu Test'})
+        cls.categ = cls.env['product.category.public'].create({'name': 'Edu Test'})
         cls.category = cls.env['op.category'].create({
             'name': 'Test Category', 'code': 'TCAT',
         })
