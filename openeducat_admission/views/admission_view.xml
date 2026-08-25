@@ -56,15 +56,19 @@
                         <field name="image" widget="image" class="oe_left oe_avatar" />
                         <div class="oe_title">
                             <h1>
-                                <field name="title" placeholder="Title" style="width: 30%" />
+                                <field name="title" placeholder="Title" style="width: 30%%" />
                             </h1>
                             <!-- Igual que en la ficha del alumno: fuera la <table>, que
                                  v18 no trata como maquetación del título, y ancho
                                  acotado porque en v18 el título es siempre editable y
                                  cada campo se estiraría a un tercio de la ficha.
-                                 El ancho del «Título» de arriba llevaba «30%%», con el
-                                 doble % de un formato de Python colado en el XML: no es
-                                 una medida CSS válida y el navegador la descartaba. -->
+                                 Los «%%» de los anchos NO son una errata: el cargador
+                                 de XML pasa el arch por una sustitución de formato de
+                                 Python -la que permite referirse a un xmlid dentro de
+                                 un atributo-, de modo que «%%» es el escape que deja
+                                 un «%» literal en la base. Escribir uno solo funciona
+                                 por casualidad mientras el arch no tenga ninguna
+                                 referencia, y revienta el día que la tenga. -->
                             <h1 class="d-flex gap-2">
                                 <field name="name" placeholder="First Name" style="width: 11rem" />
                                 <field name="middle_name" placeholder="Middle Name" style="width: 11rem" />
@@ -105,10 +109,10 @@
                                     <field name="street" placeholder="Street..." />
                                     <field name="street2" />
                                     <div class="address_format">
-                                        <field name="city" placeholder="City" style="width: 40%" />
+                                        <field name="city" placeholder="City" style="width: 40%%" />
                                         <field name="state_id" options='{"no_open": True}'
-                                            placeholder="State" style="width: 24%" />
-                                        <field name="zip" placeholder="ZIP" style="width: 34%" />
+                                            placeholder="State" style="width: 24%%" />
+                                        <field name="zip" placeholder="ZIP" style="width: 34%%" />
                                     </div>
                                     <field name="country_id" placeholder="Country" options='{"no_open": True}' />
                                     <field name="phone" placeholder="Phone" />
