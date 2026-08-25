@@ -43,7 +43,7 @@ msgstr "Compañía"
 #. module: openeducat_fees
 #: model:ir.model,name:openeducat_fees.model_op_course
 msgid "Course"
-msgstr "Curso"
+msgstr "Plantilla"
 
 #. module: openeducat_fees
 #: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms__create_uid

@@ -385,7 +385,7 @@ msgstr "Código de barras"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_batch_tree
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_search
 msgid "Batch"
-msgstr "Convocatoria"
+msgstr "Curso"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_course__batch_ids
@@ -399,7 +399,7 @@ msgstr "Curso(s)"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_course_form
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 msgid "Batches"
-msgstr "Convocatorias"
+msgstr "Cursos"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__birth_date
@@ -609,7 +609,7 @@ msgstr "El código debe ser único por categoría."
 #. module: openeducat_core
 #: model:ir.model.constraint,message:openeducat_core.constraint_op_course_unique_course_code
 msgid "Code should be unique per course!"
-msgstr "El código debe ser único por curso."
+msgstr "El código debe ser único por plantilla."
 
 #. module: openeducat_core
 #: model:ir.model.constraint,message:openeducat_core.constraint_op_subject_unique_subject_code
@@ -775,7 +775,7 @@ msgstr "País de nacimiento"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_course_tree
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_search
 msgid "Course"
-msgstr "Curso"
+msgstr "Plantilla"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student__course_detail_ids
@@ -786,7 +786,7 @@ msgstr "Datos del curso"
 #. module: openeducat_core
 #: model:ir.ui.menu,name:openeducat_core.menu_op_school_config_course
 msgid "Course Management"
-msgstr "Gestión de cursos"
+msgstr "Gestión de plantillas"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_course_form
@@ -798,35 +798,35 @@ msgstr "Nombre del curso"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_search
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_tree
 msgid "Course Registration"
-msgstr "Matrícula de cursos"
+msgstr "Matrícula de asignaturas"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_course_topic
 msgid "Course Topic"
-msgstr "Tema del curso"
+msgstr "Tema de la plantilla"
 
 #. module: openeducat_core
 #: model:ir.model.constraint,message:openeducat_core.constraint_op_batch_unique_batch_code
 msgid "Course and Code combination should be unique per batch!"
-msgstr "La combinación de curso y código debe ser única por convocatoria."
+msgstr "La combinación de plantilla y código debe ser única por curso."
 
 #. module: openeducat_core
 #. odoo-python
 #: code:addons/openeducat_core/models/subject_registration.py:0
 msgid "Course not found on student's admission!"
-msgstr "No se encuentra el curso en la admisión del estudiante."
+msgstr "No se encuentra la plantilla en la admisión del estudiante."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__course_ids
 msgid "Course(s)"
-msgstr "Curso(s)"
+msgstr "Plantilla(s)"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.act_open_op_course_view
 #: model:ir.ui.menu,name:openeducat_core.menu_op_course_sub
 #: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 msgid "Courses"
-msgstr "Cursos"
+msgstr "Plantillas"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.op_faculty_create_employee_view
@@ -2473,12 +2473,12 @@ msgstr "Nº de lista"
 #. module: openeducat_core
 #: model:ir.model.constraint,message:openeducat_core.constraint_op_student_course_unique_name_roll_number_id
 msgid "Roll Number & Student must be unique per Batch!"
-msgstr "El nº de lista y el estudiante deben ser únicos por convocatoria."
+msgstr "El nº de lista y el estudiante deben ser únicos por curso."
 
 #. module: openeducat_core
 #: model:ir.model.constraint,message:openeducat_core.constraint_op_student_course_unique_name_roll_number_course_id
 msgid "Roll Number must be unique per Batch!"
-msgstr "El nº de lista debe ser único por convocatoria."
+msgstr "El nº de lista debe ser único por curso."
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__sinid
@@ -2784,7 +2784,7 @@ msgstr "Carné de estudiante"
 #. module: openeducat_core
 #: model:ir.model.constraint,message:openeducat_core.constraint_op_student_course_unique_name_roll_number_student_id
 msgid "Student must be unique per Batch!"
-msgstr "El estudiante no puede repetirse en la misma convocatoria."
+msgstr "El estudiante no puede repetirse en el mismo curso."
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.act_open_op_student_view

@@ -29,7 +29,7 @@ msgstr "Gestión de equipamiento"
 #. module: openeducat_classroom
 #: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__batch_id
 msgid "Batch"
-msgstr "Convocatoria"
+msgstr "Curso"
 
 #. module: openeducat_classroom
 #: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_search
@@ -70,7 +70,7 @@ msgstr "El código debe ser único por aula."
 #. module: openeducat_classroom
 #: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__course_id
 msgid "Course"
-msgstr "Curso"
+msgstr "Plantilla"
 
 #. module: openeducat_classroom
 #: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__create_uid

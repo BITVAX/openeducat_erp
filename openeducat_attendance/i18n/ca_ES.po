@@ -150,7 +150,7 @@ msgstr "Línies d'assistència"
 #: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_line_search
 #: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_register_search
 msgid "Batch"
-msgstr "Convocatòria"
+msgstr "Curs"
 
 #. module: openeducat_attendance
 #: model_terms:ir.ui.view,arch_db:openeducat_attendance.student_attendance_form
@@ -181,7 +181,7 @@ msgstr "Confirmar la selecció d'estudiants"
 #: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_line_search
 #: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_register_search
 msgid "Course"
-msgstr "Curs"
+msgstr "Plantilla"
 
 #. module: openeducat_attendance
 #: model:ir.model.fields,field_description:openeducat_attendance.field_op_all_student__create_uid

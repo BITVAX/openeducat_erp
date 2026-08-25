@@ -18,7 +18,7 @@ msgstr ""
 #. module: openeducat_admission
 #: model_terms:ir.ui.view,arch_db:openeducat_admission.report_admission_analysis
 msgid "<b>Course : </b>"
-msgstr "<b>Curs: </b>"
+msgstr "<b>Plantilla: </b>"
 
 #. module: openeducat_admission
 #: model_terms:ir.ui.view,arch_db:openeducat_admission.report_admission_analysis
@@ -97,13 +97,13 @@ msgstr "Procés d'admissió"
 #: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_search
 #: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_tree
 msgid "Admission Register"
-msgstr "Convocatòria d'admissió"
+msgstr "Registre d'admissió"
 
 #. module: openeducat_admission
 #: model:ir.actions.act_window,name:openeducat_admission.act_open_op_admission_register_view
 #: model:ir.ui.menu,name:openeducat_admission.menu_admission_register
 msgid "Admission Registers"
-msgstr "Convocatòries d'admissió"
+msgstr "Registres d'admissió"
 
 #. module: openeducat_admission
 #: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__admission_ids
@@ -131,8 +131,8 @@ msgid ""
 "Application Date should be between Start Date &                     End Date"
 " of Admission Register."
 msgstr ""
-"La data de sol·licitud ha de ser entre la data d'inici i la de fi de la "
-"convocatòria d'admissió."
+"La data de sol·licitud ha de ser entre la data d'inici i la de fi del "
+"registre d'admissió."
 
 #. module: openeducat_admission
 #: model:ir.model.fields.selection,name:openeducat_admission.selection__op_admission_register__state__application
@@ -165,7 +165,7 @@ msgstr "Nombre d'adjunts"
 #: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__batch_id
 #: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_search
 msgid "Batch"
-msgstr "Convocatòria"
+msgstr "Curs"
 
 #. module: openeducat_admission
 #: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__birth_date
@@ -221,12 +221,12 @@ msgstr "País"
 #: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register__course_id
 #: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_search
 msgid "Course"
-msgstr "Curs"
+msgstr "Plantilla"
 
 #. module: openeducat_admission
 #: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_admission_graph
 msgid "Course By Admission"
-msgstr "Curs per admissió"
+msgstr "Plantilla per admissió"
 
 #. module: openeducat_admission
 #: model_terms:ir.ui.view,arch_db:openeducat_admission.view_op_student_inherit_admission_form
@@ -593,7 +593,7 @@ msgstr "Telèfon:"
 #. odoo-python
 #: code:addons/openeducat_admission/models/admission.py:0
 msgid "Please assign batch."
-msgstr "Assigna una convocatòria."
+msgstr "Assigna un curs."
 
 #. module: openeducat_admission
 #: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__prev_course_id

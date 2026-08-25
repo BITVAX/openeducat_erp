@@ -20,12 +20,12 @@ msgstr ""
 msgid ""
 "<b>Course\n"
 "                                                                </b>"
-msgstr "<b>Curso </b>"
+msgstr "<b>Plantilla </b>"
 
 #. module: openeducat_exam
 #: model_terms:ir.ui.view,arch_db:openeducat_exam.report_ticket
 msgid "<b>Course : </b>"
-msgstr "<b>Curso: </b>"
+msgstr "<b>Plantilla: </b>"
 
 #. module: openeducat_exam
 #: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
@@ -153,7 +153,7 @@ msgstr "Asistentes"
 #: model:ir.model.fields,field_description:openeducat_exam.field_op_held_exam__batch_id
 #: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__batch_id
 msgid "Batch"
-msgstr "Convocatoria"
+msgstr "Curso"
 
 #. module: openeducat_exam
 #: model_terms:ir.ui.view,arch_db:openeducat_exam.student_hall_ticket_form
@@ -222,7 +222,7 @@ msgstr "Contacto"
 #: model:ir.model.fields,field_description:openeducat_exam.field_op_held_exam__course_id
 #: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__course_id
 msgid "Course"
-msgstr "Curso"
+msgstr "Plantilla"
 
 #. module: openeducat_exam
 #: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__create_uid
