@@ -48,7 +48,7 @@
                                             <span
                                                 t-raw="'%s' %  o['middle_name'] if  o['middle_name']  else ''" />
                                             <span
-                                                t-raw="'%s' %   o['lastsname']  if  o['lastsname']  else ''" />
+                                                t-raw="'%s' %   o['lastname']  if  o['lastname']  else ''" />
                                         </td>
                                         <td class="text-start">
                                             <span

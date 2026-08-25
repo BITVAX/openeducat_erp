@@ -110,7 +110,7 @@ class OpAdmission(models.Model):
             self.title = student.title and student.title.id or False
             self.name = student.name
             self.middle_name = student.middle_name
-            self.lastsname = student.lastsname
+            self.lastname = student.lastname
             self.birth_date = student.birth_date
             self.gender = student.gender
             self.image = student.image or False
@@ -131,7 +131,7 @@ class OpAdmission(models.Model):
             self.title = ''
             self.name = ''
             self.middle_name = ''
-            self.lastsname = ''
+            self.lastname = ''
             self.birth_date = ''
             self.gender = ''
             self.image = False
@@ -188,7 +188,7 @@ class OpAdmission(models.Model):
                 raise ValidationError(_('Please assign batch.'))
             if not record.partner_id:
                 partner_id = self.env['res.partner'].create({
-                    'name': '{} {}'.format(record.name,record.lastsname)
+                    'name': '{} {}'.format(record.name,record.lastname)
                 })
                 record.partner_id = partner_id.id
             record.state = 'confirm'
@@ -199,7 +199,7 @@ class OpAdmission(models.Model):
                 'title': student.title and student.title.id or False,
                 'name': student.name,
                 'middle_name': student.middle_name,
-                'lastsname': student.lastsname,
+                'lastname': student.lastname,
                 'birth_date': student.birth_date,
                 'gender': student.gender,
                 'course_id':

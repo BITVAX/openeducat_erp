@@ -508,7 +508,7 @@
             <field name="title" ref="base.res_partner_title_mister" />
             <field name="name">Jayden</field>
             <field name="middle_name">N</field>
-            <field name="lastsname">Moore</field>
+            <field name="lastname">Moore</field>
             <field name="gender">m</field>
             <field name="email">jaydennmoore@demo.com</field>
             <field name="fees">20000.0</field>
