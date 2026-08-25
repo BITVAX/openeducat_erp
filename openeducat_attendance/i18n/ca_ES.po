@@ -1,0 +1,569 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* openeducat_attendance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-25 07:38+0000\n"
+"PO-Revision-Date: 2026-08-25 07:38+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_attendance
+#: model:ir.ui.menu,name:openeducat_attendance.menu_op_attendance_root
+msgid " Attendances"
+msgstr "Assistències"
+
+#. module: openeducat_attendance
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.student_attendance_report
+msgid "<b>From Date: </b>"
+msgstr "<b>Data des de: </b>"
+
+#. module: openeducat_attendance
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.student_attendance_report
+msgid "<b>Student Name :</b>"
+msgstr "<b>Nom de l'estudiant:</b>"
+
+#. module: openeducat_attendance
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.student_attendance_report
+msgid "<b>To Date:</b>"
+msgstr "<b>Data fins a:</b>"
+
+#. module: openeducat_attendance
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.student_attendance_report
+msgid "<b>Total Absence</b>"
+msgstr "<b>Total de faltes</b>"
+
+#. module: openeducat_attendance
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.student_attendance_report
+msgid "<strong>Student Attendance Detail</strong>"
+msgstr "<strong>Detall d'assistència de l'estudiant</strong>"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__message_needaction
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__message_needaction
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__message_needaction
+msgid "Action Needed"
+msgstr "Acció necessària"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__activity_ids
+msgid "Activities"
+msgstr "Activitats"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Activitat d'excepció de decoració"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__activity_state
+msgid "Activity State"
+msgstr "Estat de l'activitat"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icona de tipus d'activitat"
+
+#. module: openeducat_attendance
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.op_all_student_form
+msgid "Add Absent Student(s)"
+msgstr "Afegir estudiant(s) absent(s)"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_all_student__student_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.op_all_student_form
+msgid "Add Student(s)"
+msgstr "Afegir estudiant(s)"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__message_attachment_count
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__message_attachment_count
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre d'adjunts"
+
+#. module: openeducat_attendance
+#: model:ir.actions.act_window,name:openeducat_attendance.op_all_student_act
+msgid "Attandance Sheet Import"
+msgstr "Importar el full d'assistència"
+
+#. module: openeducat_attendance
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_line_search
+msgid "Attendance"
+msgstr "Assistència"
+
+#. module: openeducat_attendance
+#: model:ir.actions.act_window,name:openeducat_attendance.act_open_op_attendance_line_view
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__attendance_line
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_line_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_sheet_form
+msgid "Attendance Line"
+msgstr "Línia d'assistència"
+
+#. module: openeducat_attendance
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_register_form
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_register_search
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_register_tree
+msgid "Attendance Register"
+msgstr "Registre d'assistència"
+
+#. module: openeducat_attendance
+#: model:ir.actions.act_window,name:openeducat_attendance.act_open_op_attendance_register_view
+#: model:ir.ui.menu,name:openeducat_attendance.menu_op_attendance_register_sub
+msgid "Attendance Registers"
+msgstr "Registres d'assistència"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__attendance_id
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_sheet_form
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_sheet_search
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_sheet_tree
+msgid "Attendance Sheet"
+msgstr "Full d'assistència"
+
+#. module: openeducat_attendance
+#: model:ir.actions.act_window,name:openeducat_attendance.act_open_op_attendance_sheet_view
+#: model:ir.ui.menu,name:openeducat_attendance.menu_op_attendance_sheet_sub
+msgid "Attendance Sheets"
+msgstr "Fulls d'assistència"
+
+#. module: openeducat_attendance
+#: model:ir.ui.menu,name:openeducat_attendance.menu_op_attendance_line_sub
+msgid "Attendance lines"
+msgstr "Línies d'assistència"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_all_student__batch_id
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__batch_id
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__batch_id
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__batch_id
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_register_search
+msgid "Batch"
+msgstr "Convocatòria"
+
+#. module: openeducat_attendance
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.student_attendance_form
+msgid "Close"
+msgstr "Tancar"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__code
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_register_search
+msgid "Code"
+msgstr "Codi"
+
+#. module: openeducat_attendance
+#: model:ir.model.constraint,message:openeducat_attendance.constraint_op_attendance_register_unique_attendance_register_code
+msgid "Code should be unique per attendance register!"
+msgstr "El codi ha de ser únic per registre d'assistència."
+
+#. module: openeducat_attendance
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.op_all_student_form
+msgid "Confirm Student Selection"
+msgstr "Confirmar la selecció d'estudiants"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_all_student__course_id
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__course_id
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__course_id
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__course_id
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_register_search
+msgid "Course"
+msgstr "Curs"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_all_student__create_uid
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__create_uid
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__create_uid
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__create_uid
+#: model:ir.model.fields,field_description:openeducat_attendance.field_student_attendance__create_uid
+msgid "Created by"
+msgstr "Creat per"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_all_student__create_date
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__create_date
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__create_date
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__create_date
+#: model:ir.model.fields,field_description:openeducat_attendance.field_student_attendance__create_date
+msgid "Created on"
+msgstr "Creat el"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__attendance_date
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__attendance_date
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.student_attendance_report
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_sheet_search
+msgid "Date"
+msgstr "Data"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_all_student__display_name
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__display_name
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__display_name
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__display_name
+#: model:ir.model.fields,field_description:openeducat_attendance.field_student_attendance__display_name
+msgid "Display Name"
+msgstr "Nom mostrat"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__faculty_id
+msgid "Faculty"
+msgstr "Professor"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__message_follower_ids
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__message_follower_ids
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__message_follower_ids
+msgid "Followers"
+msgstr "Seguidors"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__message_partner_ids
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__message_partner_ids
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidors (Partners)"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_register__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icona Font Awesome p.e. fa-tasks"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_student_attendance__from_date
+msgid "From Date"
+msgstr "Des de la data"
+
+#. module: openeducat_attendance
+#: model:ir.actions.report,name:openeducat_attendance.action_report_student_attendance
+msgid "Generate Attendance"
+msgstr "Generar l'assistència"
+
+#. module: openeducat_attendance
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_register_search
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_sheet_search
+msgid "Group By..."
+msgstr "Agrupa per..."
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__has_message
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__has_message
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__has_message
+msgid "Has Message"
+msgstr "Té un missatge"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_all_student__id
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__id
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__id
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__id
+#: model:ir.model.fields,field_description:openeducat_attendance.field_student_attendance__id
+msgid "ID"
+msgstr "ID (identificador)"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__activity_exception_icon
+msgid "Icon"
+msgstr "Icona"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_register__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icona que indica una activitat d'excepció."
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_line__message_needaction
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_register__message_needaction
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_sheet__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+"Si està marcat, hi ha nous missatges que requereixen la vostra atenció."
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_line__message_has_error
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_line__message_has_sms_error
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_register__message_has_error
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_register__message_has_sms_error
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_sheet__message_has_error
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_sheet__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si està marcat, alguns missatges tenen un error d'entrega."
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__message_is_follower
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__message_is_follower
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__message_is_follower
+msgid "Is Follower"
+msgstr "És un seguidor"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_all_student__write_uid
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__write_uid
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__write_uid
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__write_uid
+#: model:ir.model.fields,field_description:openeducat_attendance.field_student_attendance__write_uid
+msgid "Last Updated by"
+msgstr "Última actualització per"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_all_student__write_date
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__write_date
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__write_date
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__write_date
+#: model:ir.model.fields,field_description:openeducat_attendance.field_student_attendance__write_date
+msgid "Last Updated on"
+msgstr "Última actualització el"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__message_has_error
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__message_has_error
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__message_has_error
+msgid "Message Delivery error"
+msgstr "Error d'entrega del missatge"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__message_ids
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__message_ids
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__message_ids
+msgid "Messages"
+msgstr "Missatges"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Venciment de l'activitat"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__name
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__name
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_register_search
+msgid "Name"
+msgstr "Nom"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Proper esdeveniment del calendari d'activitats"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Data límit de la següent activitat"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resum de la següent activitat"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__activity_type_id
+msgid "Next Activity Type"
+msgstr "Tipus de la següent activitat"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__message_needaction_counter
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__message_needaction_counter
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'accions"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__message_has_error_counter
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__message_has_error_counter
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d'errors"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_line__message_needaction_counter
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_register__message_needaction_counter
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_sheet__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Nombre de missatges que requereixen una acció"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_line__message_has_error_counter
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_register__message_has_error_counter
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_sheet__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de missatges amb error d'entrega"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__present
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_line_search
+msgid "Present ?"
+msgstr "Present?"
+
+#. module: openeducat_attendance
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.student_attendance_form
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__rating_ids
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__rating_ids
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__rating_ids
+msgid "Ratings"
+msgstr "Valoracions"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__register_id
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_sheet_search
+msgid "Register"
+msgstr "Registre"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__remark
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.student_attendance_report
+msgid "Remark"
+msgstr "Observació"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__activity_user_id
+msgid "Responsible User"
+msgstr "Usuari responsable"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__message_has_sms_error
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__message_has_sms_error
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Error de lliurament SMS"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__session_id
+msgid "Session"
+msgstr "Sessió"
+
+#. module: openeducat_attendance
+#: model:ir.model.constraint,message:openeducat_attendance.constraint_op_attendance_sheet_unique_register_sheet
+msgid "Sheet must be unique per Register/Session."
+msgstr "El full ha de ser únic per registre i sessió."
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_register__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Estat basat en activitats\n"
+"Vençuda: La data límit ja ha passat\n"
+"Avui: La data de l'activitat és avui\n"
+"Planificat: Activitats futures."
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__student_id
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_line_search
+msgid "Student"
+msgstr "Estudiant"
+
+#. module: openeducat_attendance
+#: model:ir.actions.act_window,name:openeducat_attendance.student_attendance_act
+msgid "Student Attendance"
+msgstr "Assistència de l'estudiant"
+
+#. module: openeducat_attendance
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.student_attendance_form
+msgid "Student Attendance Report"
+msgstr "Informe d'assistència de l'estudiant"
+
+#. module: openeducat_attendance
+#: model:ir.model.constraint,message:openeducat_attendance.constraint_op_attendance_line_unique_student
+msgid "Student must be unique per Attendance."
+msgstr "L'estudiant no es pot repetir en la mateixa assistència."
+
+#. module: openeducat_attendance
+#: model_terms:ir.ui.view,arch_db:openeducat_attendance.view_op_attendance_sheet_form
+msgid "Students"
+msgstr "Estudiants"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__subject_id
+msgid "Subject"
+msgstr "Assignatura"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_student_attendance__to_date
+msgid "To Date"
+msgstr "Fins la data"
+
+#. module: openeducat_attendance
+#. odoo-python
+#: code:addons/openeducat_attendance/wizards/student_attendance_wizard.py:0
+msgid "To Date cannot be set before From Date."
+msgstr "La data fins a no pot ser anterior a la data des de."
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__total_absent
+msgid "Total Absent"
+msgstr "Total d'absents"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__total_present
+msgid "Total Present"
+msgstr "Total de presents"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_register__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipus d'activitat d'excepció registrada."
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_line__website_message_ids
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_register__website_message_ids
+#: model:ir.model.fields,field_description:openeducat_attendance.field_op_attendance_sheet__website_message_ids
+msgid "Website Messages"
+msgstr "Missatges del lloc web"
+
+#. module: openeducat_attendance
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_line__website_message_ids
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_register__website_message_ids
+#: model:ir.model.fields,help:openeducat_attendance.field_op_attendance_sheet__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de comunicacions del lloc web"
+
+#. module: openeducat_attendance
+#: model:ir.model,name:openeducat_attendance.model_op_all_student
+msgid "op.all.student"
+msgstr "op.all.student"
+
+#. module: openeducat_attendance
+#: model:ir.model,name:openeducat_attendance.model_op_attendance_line
+msgid "op.attendance.line"
+msgstr "op.attendance.line"
+
+#. module: openeducat_attendance
+#: model:ir.model,name:openeducat_attendance.model_op_attendance_register
+msgid "op.attendance.register"
+msgstr "op.attendance.register"
+
+#. module: openeducat_attendance
+#: model:ir.model,name:openeducat_attendance.model_op_attendance_sheet
+msgid "op.attendance.sheet"
+msgstr "op.attendance.sheet"
+
+#. module: openeducat_attendance
+#: model:ir.model,name:openeducat_attendance.model_report_openeducat_attendance_student_attendance_report
+msgid "report.openeducat_attendance.student_attendance_report"
+msgstr "report.openeducat_attendance.student_attendance_report"
+
+#. module: openeducat_attendance
+#: model:ir.model,name:openeducat_attendance.model_student_attendance
+msgid "student.attendance"
+msgstr "student.attendance"

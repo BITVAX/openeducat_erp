@@ -1,0 +1,3415 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* openeducat_core
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-25 07:38+0000\n"
+"PO-Revision-Date: 2026-08-25 07:38+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__meeting_count
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__meeting_count
+msgid "# Meetings"
+msgstr "# Reunions"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__supplier_invoice_count
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__supplier_invoice_count
+msgid "# Vendor Bills"
+msgstr "# Factures de Proveïdors"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "<b>DATE: </b>"
+msgstr "<b>DATA: </b>"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "<b>PRINCIPAL</b>"
+msgstr "<b>DIRECCIÓ</b>"
+
+#. module: openeducat_core
+#: model_terms:ir.actions.act_window,help:openeducat_core.open_board_faculty
+msgid "<b>Your faculty dashboard is empty.</b>"
+msgstr "<b>El tauler del professor és buit.</b>"
+
+#. module: openeducat_core
+#: model_terms:ir.actions.act_window,help:openeducat_core.open_board_student
+msgid "<b>Your student dashboard is empty.</b>"
+msgstr "<b>El tauler de l'estudiant és buit.</b>"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_idcard
+msgid ""
+"<br/>\n"
+"                                                    BirthDate :"
+msgstr "<br/> Data de naixement:"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_idcard
+msgid ""
+"<br/>\n"
+"                                                    Blood Group :"
+msgstr "<br/> Grup sanguini:"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_idcard
+msgid ""
+"<br/>\n"
+"                                                    E-mail :"
+msgstr "<br/> Correu electrònic:"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_idcard
+msgid ""
+"<br/>\n"
+"                                                    Phone :"
+msgstr "<br/> Telèfon:"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid ""
+"<font color=\"white\">.</font>\n"
+"                                            is / was a bonafide student of this school / college\n"
+"                                            studying\n"
+"                                            in"
+msgstr ""
+"<font color=\"white\">.</font> és o ha estat estudiant d'aquest centre, "
+"cursant"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "<strong>Bonafide Certificate</strong>"
+msgstr "<strong>Certificat d'escolaritat</strong>"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__blood_group__a+
+msgid "A+ve"
+msgstr "A+"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__blood_group__a-
+msgid "A-ve"
+msgstr "A-"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__blood_group__ab+
+msgid "AB+ve"
+msgstr "AB+"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__blood_group__ab-
+msgid "AB-ve"
+msgstr "AB-"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__aeat_anonymous_cash_customer
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__aeat_anonymous_cash_customer
+msgid "AEAT - Anonymous customer"
+msgstr "AEAT - Client anònim"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__aeat_identification_type
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__aeat_identification_type
+msgid "AEAT Identification type"
+msgstr "Tipus d'identificació amb AEAT"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__property_account_payable_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__property_account_payable_id
+msgid "Account Payable"
+msgstr "Compte a Pagar"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__property_account_receivable_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__property_account_receivable_id
+msgid "Account Receivable"
+msgstr "Compte a Cobrar"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_res_company__accreditation
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_company_form_openeducat_core
+msgid "Accreditation"
+msgstr "Acreditació"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__message_needaction
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__message_needaction
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__message_needaction
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__message_needaction
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__message_needaction
+msgid "Action Needed"
+msgstr "Cal fer alguna acció"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__active
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__active
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__active
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__active
+msgid "Active"
+msgstr "Actiu"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__active_lang_count
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__active_lang_count
+msgid "Active Lang Count"
+msgstr "Comptador de Llengua Actiu"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_ids
+msgid "Activities"
+msgstr "Activitats"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_exception_decoration
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Activitat d'excepció de decoració"
+
+#. module: openeducat_core
+#: model:ir.ui.menu,name:openeducat_core.menu_op_school_config_activity
+msgid "Activity Management"
+msgstr "Gestió d'activitats"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_state
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_state
+msgid "Activity State"
+msgstr "Estat de l'activitat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_type_icon
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icona de tipus d'activitat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__departure_description
+msgid "Additional Information"
+msgstr "Informació addicional"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__additional_note
+msgid "Additional Note"
+msgstr "Nota addicional"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
+msgid "Address"
+msgstr "Adreça"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__type
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__type
+msgid "Address Type"
+msgstr "Tipus d'adreça"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.kanban_view_student
+msgid "Address:"
+msgstr "Adreça:"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
+msgid "Admission Details"
+msgstr "Dades de l'admissió"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__aeat_identification
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__aeat_identification
+msgid "Aeat Identification"
+msgstr "Identificació AEAT"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__aeat_sending_enabled
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__aeat_sending_enabled
+msgid "Aeat Sending Enabled"
+msgstr "Enviament AEAT habilitat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_student__lang
+msgid ""
+"All the emails and documents sent to this contact will be translated in this"
+" language."
+msgstr ""
+"Tots els correus i documents enviats a aquest contacte es traduiran en "
+"aquest idioma."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__already_partner
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
+msgid "Already Partner"
+msgstr "Ja és contacte"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_res_company__approval_authority
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_company_form_openeducat_core
+msgid "Approval Authority"
+msgstr "Òrgan que aprova"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_form
+msgid "Approve"
+msgstr "Aprova"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_subject_registration__state__approved
+msgid "Approved"
+msgstr "Aprovat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__message_attachment_count
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__message_attachment_count
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__message_attachment_count
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__message_attachment_count
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre d'adjunts"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__autopost_bills
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__autopost_bills
+msgid "Auto-post bills"
+msgstr "Publicació automàtica de factures"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__autopost_bills
+#: model:ir.model.fields,help:openeducat_core.field_op_student__autopost_bills
+msgid "Automatically post bills for this trusted partner"
+msgstr "Publica automàticament les factures d'aquest contacte de confiança"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__receipt_reminder_email
+#: model:ir.model.fields,help:openeducat_core.field_op_student__receipt_reminder_email
+msgid ""
+"Automatically send a confirmation email to the vendor X days before the "
+"expected receipt date, asking him to confirm the exact date."
+msgstr ""
+"Envieu automàticament un email de confirmació al proveïdor X dies abans de "
+"la data prevista de recepció, demanant-li que confirmi la data exacta."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__avatar_1920
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__avatar_1920
+msgid "Avatar"
+msgstr "Avatar"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__avatar_1024
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__avatar_1024
+msgid "Avatar 1024"
+msgstr "Avatar 1024"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__avatar_128
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__avatar_128
+msgid "Avatar 128"
+msgstr "Avatar 128"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__avatar_256
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__avatar_256
+msgid "Avatar 256"
+msgstr "Avatar 256"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__avatar_512
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__avatar_512
+msgid "Avatar 512"
+msgstr "Avatar 512"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__blood_group__b+
+msgid "B+ve"
+msgstr "B+"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__blood_group__b-
+msgid "B-ve"
+msgstr "B-"
+
+#. module: openeducat_core
+#: model:res.groups,name:openeducat_core.group_op_back_office
+msgid "Back Office"
+msgstr "Back office"
+
+#. module: openeducat_core
+#: model:res.groups,name:openeducat_core.group_op_back_office_admin
+msgid "Back Office Admin"
+msgstr "Administrador de back office"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__barcode
+msgid "Badge ID"
+msgstr "ID de credencial"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__bank_account_count
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__bank_account_count
+msgid "Bank"
+msgstr "Banc"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__bank_account_id
+msgid "Bank Account"
+msgstr "Compte bancari"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__bank_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__bank_ids
+msgid "Banks"
+msgstr "Bancs"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__barcode
+msgid "Barcode"
+msgstr "Codi de barres"
+
+#. module: openeducat_core
+#: model:ir.model,name:openeducat_core.model_op_batch
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student_course__batch_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__batch_id
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_batch_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_batch_search
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_batch_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_search
+msgid "Batch"
+msgstr "Convocatòria"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__batch_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__batch_ids
+msgid "Batch(es)"
+msgstr "Curso(s)"
+
+#. module: openeducat_core
+#: model:ir.actions.act_window,name:openeducat_core.act_open_op_batch_view
+#: model:ir.ui.menu,name:openeducat_core.menu_op_batch_sub
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
+msgid "Batches"
+msgstr "Convocatòries"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__birth_date
+msgid "Birth Date"
+msgstr "Data de naixement"
+
+#. module: openeducat_core
+#. odoo-python
+#: code:addons/openeducat_core/models/student.py:0
+msgid "Birth Date can't be greater than current date!"
+msgstr "La data de naixement no pot ser posterior a avui."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__birthday
+msgid "Birthday"
+msgstr "Data de naixement"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__is_blacklisted
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__is_blacklisted
+msgid "Blacklist"
+msgstr "Llista negra"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__mobile_blacklisted
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__mobile_blacklisted
+msgid "Blacklisted Phone Is Mobile"
+msgstr "Telèfon a la llista negra és mòbil"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__phone_blacklisted
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__phone_blacklisted
+msgid "Blacklisted Phone is Phone"
+msgstr "El telèfon a la llista negra és el telèfon"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__blood_group
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_search
+msgid "Blood Group"
+msgstr "Grup sanguini"
+
+#. module: openeducat_core
+#: model:ir.actions.report,name:openeducat_core.action_report_student_bonafide
+msgid "Bonafide Certificate"
+msgstr "Certificat d'escolaritat"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_subject__type__both
+msgid "Both"
+msgstr "Ambdós"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__message_bounce
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__message_bounce
+msgid "Bounce"
+msgstr "Rebot"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__buyer_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__buyer_id
+msgid "Buyer"
+msgstr "Comprador"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.op_faculty_create_employee_view
+#: model_terms:ir.ui.view,arch_db:openeducat_core.op_faculty_user_create_view
+#: model_terms:ir.ui.view,arch_db:openeducat_core.op_student_user_create_view
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__career
+msgid "Career"
+msgstr "Carrera"
+
+#. module: openeducat_core
+#: model:ir.actions.act_window,name:openeducat_core.act_open_op_category_view
+#: model:ir.ui.menu,name:openeducat_core.menu_op_category_sub
+msgid "Categories"
+msgstr "Categories"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__employee_type
+msgid ""
+"Categorize your Employees by type. This field also has an impact on "
+"contracts. Only Employees, Students and Trainee will have contract history."
+msgstr ""
+"Classifica els empleats per tipus. També afecta els contractes: només "
+"empleats, estudiants i personal en pràctiques tenen històric de contractes."
+
+#. module: openeducat_core
+#: model:ir.model,name:openeducat_core.model_op_category
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__category_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__category_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__category_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__category_id
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_category_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_category_search
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_category_tree
+msgid "Category"
+msgstr "Categoria"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__certificate
+msgid "Certificate Level"
+msgstr "Nivell de certificat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__channel_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__channel_ids
+msgid "Channels"
+msgstr "Canals"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__is_company
+#: model:ir.model.fields,help:openeducat_core.field_op_student__is_company
+msgid "Check if the contact is a company, otherwise it is a person"
+msgstr ""
+"Marqueu si el contacte és una empresa. En cas contrari, serà una persona."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__employee
+#: model:ir.model.fields,help:openeducat_core.field_op_student__employee
+msgid "Check this box if this contact is an Employee."
+msgstr "Marqueu aquesta casella si aquest contacte és un empleat."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__country_enforce_cities
+#: model:ir.model.fields,help:openeducat_core.field_op_student__country_enforce_cities
+msgid ""
+"Check this box to ensure every address created in that country has a 'City' "
+"chosen in the list of the country's cities."
+msgstr ""
+"Marqueu aquesta casella per assegurar-vos que totes les adreces creades en "
+"aquest país tinguin una \"Ciutat\" escollida a la llista de ciutats del "
+"país."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__aeat_anonymous_cash_customer
+#: model:ir.model.fields,help:openeducat_core.field_op_student__aeat_anonymous_cash_customer
+msgid "Check this for anonymous cash customer. AEAT communication"
+msgstr "Marqueu això per a clients de caixa anònims. Comunicació amb AEAT"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__aeat_simplified_invoice
+#: model:ir.model.fields,help:openeducat_core.field_op_student__aeat_simplified_invoice
+msgid ""
+"Checking this mark, invoices done to this partner will be sent to AEAT as "
+"simplified invoices."
+msgstr ""
+"Marcant aquesta casella, les factures fetes a aquesta empresa s'enviaran a "
+"l'AEAT com a factures simplificades."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_res_users__child_ids
+msgid "Childs"
+msgstr "Fills"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__city
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__city
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
+msgid "City"
+msgstr "Ciutat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__city_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__city_id
+msgid "City ID"
+msgstr "Identificació de la ciutat"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
+msgid "City completion"
+msgstr "Autocompletat de la població"
+
+#. module: openeducat_core
+#: model_terms:ir.actions.act_window,help:openeducat_core.act_open_op_student_view
+msgid "Clic para agregar un estudiante en su directorio."
+msgstr "Fes clic per afegir un estudiant al teu directori."
+
+#. module: openeducat_core
+#: model_terms:ir.actions.act_window,help:openeducat_core.act_open_op_faculty_view
+msgid "Clic para agregar un profesor en su directorio."
+msgstr "Fes clic per afegir un professor al teu directori."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__coach_id
+msgid "Coach"
+msgstr "Mentor"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__code
+#: model:ir.model.fields,field_description:openeducat_core.field_op_category__code
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__code
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject__code
+msgid "Code"
+msgstr "Codi"
+
+#. module: openeducat_core
+#: model:ir.model.constraint,message:openeducat_core.constraint_op_category_unique_category_code
+msgid "Code should be unique per category!"
+msgstr "El codi ha de ser únic per categoria."
+
+#. module: openeducat_core
+#: model:ir.model.constraint,message:openeducat_core.constraint_op_course_unique_course_code
+msgid "Code should be unique per course!"
+msgstr "El codi ha de ser únic per curs."
+
+#. module: openeducat_core
+#: model:ir.model.constraint,message:openeducat_core.constraint_op_subject_unique_subject_code
+msgid "Code should be unique per subject!"
+msgstr "El codi ha de ser únic per assignatura."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__color
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__color
+msgid "Color Index"
+msgstr "Índex de color"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__commercial_partner_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__commercial_partner_id
+msgid "Commercial Entity"
+msgstr "Entitat Comercial"
+
+#. module: openeducat_core
+#: model:ir.model,name:openeducat_core.model_res_company
+msgid "Companies"
+msgstr "Empreses"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__ref_company_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__ref_company_ids
+msgid "Companies that refers to partner"
+msgstr "Empreses que fan referència al soci"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__company_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__company_id
+msgid "Company"
+msgstr "Empresa"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__company_country_id
+msgid "Company Country"
+msgstr "País de l'Empresa"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__company_registry
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__company_registry
+msgid "Company ID"
+msgstr "ID de l'empresa"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__company_registry_label
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__company_registry_label
+msgid "Company ID Label"
+msgstr "Etiqueta de l'identificador d'empresa"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__company_name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__company_name
+msgid "Company Name"
+msgstr "Nom d'empresa"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__commercial_company_name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__commercial_company_name
+msgid "Company Name Entity"
+msgstr "Entitat del nom de la companyia"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__company_type
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__company_type
+msgid "Company Type"
+msgstr "Tipus d'empresa"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__company
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__company
+msgid "Company name (in Magento)"
+msgstr "Nom de l'empresa (a Magento)"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__contact_address
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__contact_address
+msgid "Complete Address"
+msgstr "Adreça completa"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__complete_name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__complete_name
+msgid "Complete Name"
+msgstr "Nom complert"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_subject__subject_type__compulsory
+msgid "Compulsory"
+msgstr "Obligatòria"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__compulsory_subject_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_form
+msgid "Compulsory Subjects"
+msgstr "Assignatures obligatòries"
+
+#. module: openeducat_core
+#: model:ir.ui.menu,name:openeducat_core.menu_op_school_config
+msgid "Configuration"
+msgstr "Configuració"
+
+#. module: openeducat_core
+#: model:ir.model,name:openeducat_core.model_res_partner
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__child_ids
+msgid "Contact"
+msgstr "Contacte"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__emergency_contact
+msgid "Contact Name"
+msgstr "Nom del contacte"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__emergency_phone
+msgid "Contact Phone"
+msgstr "Telèfon del contacte"
+
+#. module: openeducat_core
+#. odoo-javascript
+#: code:addons/openeducat_core/static/src/xml/dashboard_ext_openeducat.xml:0
+msgid "Contact Support"
+msgstr "Contactar amb suport"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__message_bounce
+#: model:ir.model.fields,help:openeducat_core.field_op_student__message_bounce
+msgid "Counter of the number of bounced emails for this contact"
+msgstr ""
+"Comptador del nombre de correus electrònics rebotats d'aquest contacte"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__country_id
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
+msgid "Country"
+msgstr "País"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__company_country_code
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__country_code
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__country_code
+msgid "Country Code"
+msgstr "Codi de país"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__country_of_birth
+msgid "Country of Birth"
+msgstr "País de naixement"
+
+#. module: openeducat_core
+#: model:ir.model,name:openeducat_core.model_op_course
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__course_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course_topic__course_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student_course__course_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject__course_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__course_id
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_batch_search
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_course_search
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_course_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_search
+msgid "Course"
+msgstr "Curs"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__course_detail_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_course_tree
+msgid "Course Details"
+msgstr "Dades del curs"
+
+#. module: openeducat_core
+#: model:ir.ui.menu,name:openeducat_core.menu_op_school_config_course
+msgid "Course Management"
+msgstr "Gestió de cursos"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_course_form
+msgid "Course Name"
+msgstr "Nom del curs"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_search
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_tree
+msgid "Course Registration"
+msgstr "Matrícula de cursos"
+
+#. module: openeducat_core
+#: model:ir.model,name:openeducat_core.model_op_course_topic
+msgid "Course Topic"
+msgstr "Tema del curs"
+
+#. module: openeducat_core
+#: model:ir.model.constraint,message:openeducat_core.constraint_op_batch_unique_batch_code
+msgid "Course and Code combination should be unique per batch!"
+msgstr "La combinació de curs i codi ha de ser única per convocatòria."
+
+#. module: openeducat_core
+#. odoo-python
+#: code:addons/openeducat_core/models/subject_registration.py:0
+msgid "Course not found on student's admission!"
+msgstr "No es troba el curs en l'admissió de l'estudiant."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__course_ids
+msgid "Course(s)"
+msgstr "Curs(os)"
+
+#. module: openeducat_core
+#: model:ir.actions.act_window,name:openeducat_core.act_open_op_course_view
+#: model:ir.ui.menu,name:openeducat_core.menu_op_course_sub
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
+msgid "Courses"
+msgstr "Cursos"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.op_faculty_create_employee_view
+msgid "Create Employee"
+msgstr "Crea un treballador"
+
+#. module: openeducat_core
+#: model:ir.model,name:openeducat_core.model_wizard_op_faculty_employee
+msgid "Create Employee and User of Faculty"
+msgstr "Crear l'empleat i l'usuari del professor"
+
+#. module: openeducat_core
+#: model:ir.model,name:openeducat_core.model_wizard_op_faculty
+#: model_terms:ir.ui.view,arch_db:openeducat_core.op_faculty_user_create_view
+msgid "Create User for selected Faculty(s)"
+msgstr "Crear usuari per als professors seleccionats"
+
+#. module: openeducat_core
+#: model:ir.model,name:openeducat_core.model_wizard_op_student
+#: model_terms:ir.ui.view,arch_db:openeducat_core.op_student_user_create_view
+msgid "Create User for selected Student(s)"
+msgstr "Crear usuari per als estudiants seleccionats"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.op_faculty_user_create_view
+#: model_terms:ir.ui.view,arch_db:openeducat_core.op_student_user_create_view
+msgid "Create Users"
+msgstr "Crear usuaris"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__create_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_op_category__create_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__create_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course_topic__create_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__create_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__create_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student_course__create_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject__create_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__create_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty__create_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty_employee__create_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_student__create_uid
+msgid "Created by"
+msgstr "Creat per"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__create_date
+#: model:ir.model.fields,field_description:openeducat_core.field_op_category__create_date
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__create_date
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course_topic__create_date
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__create_date
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__create_date
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student_course__create_date
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject__create_date
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__create_date
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty__create_date
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty_employee__create_date
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_student__create_date
+msgid "Created on"
+msgstr "Creat el"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__credit_limit
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__credit_limit
+msgid "Credit Limit"
+msgstr "Límit de crèdit"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__credit_to_invoice
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__credit_to_invoice
+msgid "Credit To Invoice"
+msgstr "Crèdit a facturar"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__credit_limit
+#: model:ir.model.fields,help:openeducat_core.field_op_student__credit_limit
+msgid "Credit limit specific to this partner."
+msgstr "Límit de crèdit específic per a aquest soci."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__currency_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__currency_id
+msgid "Currency"
+msgstr "Divisa"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__curriculum
+msgid "Curriculum"
+msgstr "Pla d'estudis"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__property_stock_customer
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__property_stock_customer
+msgid "Customer Location"
+msgstr "Ubicació del client"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__customer_payment_mode_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__customer_payment_mode_id
+msgid "Customer Payment Mode"
+msgstr "Modalitat de pagament del client"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__property_payment_term_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__property_payment_term_id
+msgid "Customer Payment Terms"
+msgstr "Termini de pagament del client"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__customer_rank
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__customer_rank
+msgid "Customer Rank"
+msgstr "Classificació del Client"
+
+#. module: openeducat_core
+#: model:ir.ui.menu,name:openeducat_core.menu_op_dashboard_faculty
+msgid "Dashboard"
+msgstr "Taulell"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_course_form
+msgid "Data"
+msgstr "Dades"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__birthday
+msgid "Date of Birth"
+msgstr "Data de naixement"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__reminder_date_before_receipt
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__reminder_date_before_receipt
+msgid "Days Before Receipt"
+msgstr "Dies abans de la recepció"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__days_sales_outstanding
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__days_sales_outstanding
+msgid "Days Sales Outstanding (DSO)"
+msgstr "Període mitjà de pagament (DSO)"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__property_delivery_carrier_id
+#: model:ir.model.fields,help:openeducat_core.field_op_student__property_delivery_carrier_id
+msgid "Default delivery method used in sales orders."
+msgstr "Mètode d'entrega predeterminat utilitzat en les comandes de vendes."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__resource_calendar_id
+msgid ""
+"Define the working schedule of the resource. If not set, the resource will "
+"have fully flexible working hours."
+msgstr ""
+"Defineix l'horari de treball del recurs. Si no es configura cap, el recurs "
+"tindrà un horari totalment flexible."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__trust
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__trust
+msgid "Degree of trust you have in this debtor"
+msgstr "Grau de confiança en aquest deutor"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__property_delivery_carrier_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__property_delivery_carrier_id
+msgid "Delivery Method"
+msgstr "Mètode de lliurament"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__department_id
+msgid "Department"
+msgstr "Departament"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__department_color
+msgid "Department Color"
+msgstr "Color del departament"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__departure_date
+msgid "Departure Date"
+msgstr "Data de sortida"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__departure_reason_id
+msgid "Departure Reason"
+msgstr "Motiu de sortida"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__description
+msgid "Description"
+msgstr "Descripció"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__child_count
+msgid "Direct Subordinates Count"
+msgstr "Nre. de subordinats directes"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__subordinate_ids
+msgid "Direct and indirect subordinates"
+msgstr "Subordinació directa i indirecta"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__child_ids
+msgid "Direct subordinates"
+msgstr "Subordinats directes"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__display_invoice_edi_format
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__display_invoice_edi_format
+msgid "Display Invoice Edi Format"
+msgstr "Mostra el format Edi de la factura"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__display_invoice_template_pdf_report_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__display_invoice_template_pdf_report_id
+msgid "Display Invoice Template Pdf Report"
+msgstr "Mostra l'informe en PDF de la plantilla de factura"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__display_name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_category__display_name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__display_name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course_topic__display_name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__display_name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__display_name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student_course__display_name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject__display_name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__display_name
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty__display_name
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty_employee__display_name
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_student__display_name
+msgid "Display Name"
+msgstr "Mostrar Nom"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__street_number2
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__street_number2
+msgid "Door"
+msgstr "Porta"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_subject_registration__state__draft
+msgid "Draft"
+msgstr "Esborrany"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__driving_license
+msgid "Driving License"
+msgstr "Carnet de conduir"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__duplicate_bank_partner_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__duplicate_bank_partner_ids
+msgid "Duplicate Bank Partner"
+msgstr "Duplicar contacte bancari"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__duplicated_bank_account_partners_count
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__duplicated_bank_account_partners_count
+msgid "Duplicated Bank Account Partners Count"
+msgstr "Comptador de contactes de comptes bancaris duplicats"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_course_form
+msgid "Editors"
+msgstr "Editors"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
+msgid "Educational"
+msgstr "Acadèmic"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__partner_share
+#: model:ir.model.fields,help:openeducat_core.field_op_student__partner_share
+msgid ""
+"Either customer (not a user), either shared user. Indicated the current "
+"partner is a customer without access or with a limited access created for "
+"sharing data."
+msgstr ""
+"O client (no usuari), o usuari compartit. S'indica que el soci actual és un "
+"client sense accés o amb un accés limitat creat per compartir dades."
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_subject__subject_type__elective
+msgid "Elective"
+msgstr "Optativa"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__elective_subject_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_form
+msgid "Elective Subjects"
+msgstr "Assignatures optatives"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__email
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__email
+msgid "Email"
+msgstr "Correu electrònic"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__emergency_contact
+msgid "Emergency Contact"
+msgstr "Contacte d'emergència"
+
+#. module: openeducat_core
+#: model:ir.model,name:openeducat_core.model_hr_employee
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__emp_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__employee
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__employee
+msgid "Employee"
+msgstr "Empleat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__name
+msgid "Employee Name"
+msgstr "Nom de l'empleat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__employee_type
+msgid "Employee Type"
+msgstr "Tipus d'empleat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__bank_account_id
+msgid "Employee bank account to pay salaries"
+msgstr "Compte bancari del treballador per pagar salaris"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__employee_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__employee_ids
+msgid "Employees"
+msgstr "Empleats"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__employees_count
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__employees_count
+msgid "Employees Count"
+msgstr "Compte d'empleats"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__end_date
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_batch_search
+msgid "End Date"
+msgstr "Data de finalització"
+
+#. module: openeducat_core
+#. odoo-python
+#: code:addons/openeducat_core/models/batch.py:0
+msgid "End Date cannot be set before                     Start Date."
+msgstr "La data de fi no pot ser anterior a la d'inici."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__country_enforce_cities
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__country_enforce_cities
+msgid "Enforce Cities"
+msgstr "Força les ciutats"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__vies_valid
+#: model:ir.model.fields,help:openeducat_core.field_op_student__vies_valid
+msgid "European VAT numbers are automatically checked on the VIES database."
+msgstr ""
+"Els números NIF/VAT Europeus son automàticament comprovats amb la base de "
+"dades VIES."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__share
+msgid ""
+"External user with limited access, created only for the purpose of sharing "
+"data."
+msgstr ""
+"Usuari extern amb accés limitat, creat només amb el propòsit de compartir "
+"dades."
+
+#. module: openeducat_core
+#: model:ir.actions.act_window,name:openeducat_core.act_open_op_faculty_view
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty__faculty_ids
+#: model:ir.ui.menu,name:openeducat_core.menu_op_faculty_main
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_batch_form
+msgid "Faculties"
+msgstr "Professors"
+
+#. module: openeducat_core
+#: model:ir.model,name:openeducat_core.model_op_faculty
+#: model:ir.model.fields,field_description:openeducat_core.field_magento_address__faculty
+#: model:ir.model.fields,field_description:openeducat_core.field_magento_res_partner__faculty
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__faculty_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__faculty_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__faculty
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__faculty
+#: model:ir.model.fields,field_description:openeducat_core.field_res_partner__faculty
+#: model:ir.model.fields,field_description:openeducat_core.field_res_users__faculty
+#: model:res.groups,name:openeducat_core.group_op_faculty
+#: model_terms:ir.ui.view,arch_db:openeducat_core.op_faculty_user_create_view
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_search
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_tree
+msgid "Faculty"
+msgstr "Professor"
+
+#. module: openeducat_core
+#: model:ir.actions.act_window,name:openeducat_core.open_board_faculty
+#: model_terms:ir.ui.view,arch_db:openeducat_core.board_faculty_form
+msgid "Faculty Dashboard"
+msgstr "Tauler del professor"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__gender__f
+msgid "Female"
+msgstr "Femení"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__study_field
+msgid "Field of Study"
+msgstr "Camp d'estudi"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__phone_sanitized
+#: model:ir.model.fields,help:openeducat_core.field_op_student__phone_sanitized
+msgid ""
+"Field used to store sanitized phone number. Helps speeding up searches and "
+"comparisons."
+msgstr ""
+"Camp utilitzat per emmagatzemar el número de telèfon sanejat. Ajuda a "
+"accelerar les cerques i comparacions."
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
+msgid "First Name"
+msgstr "Nom"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__valid_mandate_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__valid_mandate_id
+msgid "First Valid Mandate"
+msgstr "Primer mandat vàlid"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__firstname
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__firstname
+msgid "First name"
+msgstr "Nom"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__firstname_required
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__firstname_required
+msgid "Firstname Required"
+msgstr "Nom obligatori"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__fiscal_country_codes
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__fiscal_country_codes
+msgid "Fiscal Country Codes"
+msgstr "Codis de país fiscal"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__property_account_position_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__property_account_position_id
+msgid "Fiscal Position"
+msgstr "Posició fiscal"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__message_follower_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__message_follower_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__message_follower_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__message_follower_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__message_follower_ids
+msgid "Followers"
+msgstr "Seguidors"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__message_partner_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__message_partner_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__message_partner_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__message_partner_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidors (Clients)"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__activity_type_icon
+#: model:ir.model.fields,help:openeducat_core.field_op_student__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icona Font Awesome p.e. fa-tasks"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__form_has_lastname_first
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__form_has_lastname_first
+msgid "Form Has Lastname First"
+msgstr "Cognom primer al formulari"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__email_formatted
+#: model:ir.model.fields,help:openeducat_core.field_op_student__email_formatted
+msgid "Format email address \"Name <email@domain>\""
+msgstr "Adreça e-mail formatada \"Nom <email@domain>\""
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__email_formatted
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__email_formatted
+msgid "Formatted Email"
+msgstr "Correu electrònic formatat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__fullname
+msgid "Fullname"
+msgstr "Nom complet"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__gr_no
+msgid "GR Number"
+msgstr "Núm. de registre general"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__gender
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__gender
+msgid "Gender"
+msgstr "Sexe"
+
+#. module: openeducat_core
+#: model:ir.ui.menu,name:openeducat_core.menu_op_general_main
+msgid "General"
+msgstr "General"
+
+#. module: openeducat_core
+#: model:ir.ui.menu,name:openeducat_core.menu_op_school_config_general
+msgid "General Management"
+msgstr "Gestió general"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__partner_latitude
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__partner_latitude
+msgid "Geo Latitude"
+msgstr "Geo latitud"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__partner_longitude
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__partner_longitude
+msgid "Geo Longitude"
+msgstr "Longitud Geo"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_form
+msgid "Get Subjects"
+msgstr "Portar assignatures"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject__grade_weightage
+msgid "Grade Weightage"
+msgstr "Ponderació de la qualificació"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_batch_search
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_category_search
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_course_search
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_search
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_search
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_subject_search
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_search
+msgid "Group By..."
+msgstr "Agrupa per..."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__has_message
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__has_message
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__has_message
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__has_message
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__has_message
+msgid "Has Message"
+msgstr "Tiene un mensaje"
+
+#. module: openeducat_core
+#: model:ir.module.category,description:openeducat_core.module_category_openeducat
+#: model:ir.module.category,description:openeducat_core.module_category_openeducat_others
+msgid "Helps you manage your institutes different-different users."
+msgstr "Permet gestionar els diferents usuaris del centre."
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid ""
+"His / Her birthday as recorded in the General Register of\n"
+"                                            the\n"
+"                                            school / collage is"
+msgstr ""
+"La seva data de naixement, segons consta al registre general del centre, és"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__distance_home_work
+msgid "Home-Work Distance"
+msgstr "Distància Domicili-Treball"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__km_home_work
+msgid "Home-Work Distance in Km"
+msgstr "Distància casa-feina en km"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__distance_home_work_unit
+msgid "Home-Work Distance unit"
+msgstr "Unitat de la distància casa-feina"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__street_number
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__street_number
+msgid "House"
+msgstr "Casa"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__hr_icon_display
+msgid "Hr Icon Display"
+msgstr "Visualització d'icones de recursos humans"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__hr_presence_state
+msgid "Hr Presence State"
+msgstr "Estat de presència de recursos humans"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_category__id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course_topic__id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student_course__id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject__id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__id
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty__id
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty_employee__id
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_student__id
+msgid "ID"
+msgstr "ID (identificador)"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__id_card
+msgid "ID Card Copy"
+msgstr "Còpia del DNI"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__id_number
+msgid "ID Card Number"
+msgstr "Núm. de document"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__barcode
+msgid "ID used for employee identification."
+msgstr "ID utilitzat per identificació de l'empleat."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__im_status
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__im_status
+msgid "IM Status"
+msgstr "Estat de la conversa"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_exception_icon
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_exception_icon
+msgid "Icon"
+msgstr "Icona"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__activity_exception_icon
+#: model:ir.model.fields,help:openeducat_core.field_op_student__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icona que indica una activitat d'excepció."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__identification_id
+msgid "Identification No"
+msgstr "Nº identificació"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__aeat_identification
+#: model:ir.model.fields,help:openeducat_core.field_op_student__aeat_identification
+msgid "Identification for AEAT purposes"
+msgstr "Identificació a efectes de la AEAT"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_batch__message_needaction
+#: model:ir.model.fields,help:openeducat_core.field_op_course__message_needaction
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__message_needaction
+#: model:ir.model.fields,help:openeducat_core.field_op_student__message_needaction
+#: model:ir.model.fields,help:openeducat_core.field_op_subject_registration__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si està marcat, els nous missatges requereixen la vostra atenció."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_batch__message_has_error
+#: model:ir.model.fields,help:openeducat_core.field_op_batch__message_has_sms_error
+#: model:ir.model.fields,help:openeducat_core.field_op_course__message_has_error
+#: model:ir.model.fields,help:openeducat_core.field_op_course__message_has_sms_error
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__message_has_error
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__message_has_sms_error
+#: model:ir.model.fields,help:openeducat_core.field_op_student__message_has_error
+#: model:ir.model.fields,help:openeducat_core.field_op_student__message_has_sms_error
+#: model:ir.model.fields,help:openeducat_core.field_op_subject_registration__message_has_error
+#: model:ir.model.fields,help:openeducat_core.field_op_subject_registration__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si està marcat, alguns missatges tenen un error d'entrega."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__is_blacklisted
+#: model:ir.model.fields,help:openeducat_core.field_op_student__is_blacklisted
+msgid ""
+"If the email address is on the blacklist, the contact won't receive mass "
+"mailing anymore, from any list"
+msgstr ""
+"Si l' adreça de correu electrònic està a la llista negra, el contacte ja no "
+"rebrà cap correu massa, des de qualsevol llista"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__phone_sanitized_blacklisted
+#: model:ir.model.fields,help:openeducat_core.field_op_student__phone_sanitized_blacklisted
+msgid ""
+"If the sanitized phone number is on the blacklist, the contact won't receive"
+" mass mailing sms anymore, from any list"
+msgstr ""
+"Si el número de telèfon sanejat està en la llista negra, el contacte no "
+"rebrà més sms de correu massiu, de cap llista"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__private_car_plate
+msgid "If you have more than one car, just separate the plates by a space."
+msgstr "Si té més d'un cotxe, separi les matrícules amb un espai."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__not_in_mod347
+#: model:ir.model.fields,help:openeducat_core.field_op_student__not_in_mod347
+msgid ""
+"If you mark this field, this partner will not be included in any AEAT 347 "
+"model report, independently from the total amount of its operations."
+msgstr ""
+"Si marqueu aquest camp, aquest partner no s'inclourà en cap informe del "
+"model 347, amb independència de l'import de les seves operacions."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__ignore_abnormal_invoice_amount
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__ignore_abnormal_invoice_amount
+msgid "Ignore Abnormal Invoice Amount"
+msgstr "Ignoreu l'import anormal de la factura"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__ignore_abnormal_invoice_date
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__ignore_abnormal_invoice_date
+msgid "Ignore Abnormal Invoice Date"
+msgstr "Ignoreu la data anormal de la factura"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__image_1920
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__image_1920
+msgid "Image"
+msgstr "Imatge"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__image_1024
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__image_1024
+msgid "Image 1024"
+msgstr "Imatge 1024"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__image_128
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__image_128
+msgid "Image 128"
+msgstr "Imatge 128"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__image_256
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__image_256
+msgid "Image 256"
+msgstr "Imatge 256"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__image_512
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__image_512
+msgid "Image 512"
+msgstr "Imatge 512"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__mobile_blacklisted
+#: model:ir.model.fields,help:openeducat_core.field_op_student__mobile_blacklisted
+msgid ""
+"Indicates if a blacklisted sanitized phone number is a mobile number. Helps "
+"distinguish which number is blacklisted             when there is both a "
+"mobile and phone field in a model."
+msgstr ""
+"Indica si un número de telèfon a la llista negra és un número de mòbil. "
+"Ajuda a distingir quin número està a la llista negra             quan hi ha "
+"un camp mòbil i un telèfon en un model."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__phone_blacklisted
+#: model:ir.model.fields,help:openeducat_core.field_op_student__phone_blacklisted
+msgid ""
+"Indicates if a blacklisted sanitized phone number is a phone number. Helps "
+"distinguish which number is blacklisted             when there is both a "
+"mobile and phone field in a model."
+msgstr ""
+"Indica si un número de telèfon a la llista negra és un número de telèfon. "
+"Ajuda a distingir quin número està a la llista negra            quan hi ha "
+"un camp mòbil i un telèfon en un model."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__child_all_count
+msgid "Indirect Subordinates Count"
+msgstr "Comptador de subordenades indirectes"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__industry_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__industry_id
+msgid "Industry"
+msgstr "Indústria"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__contact_address_inline
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__contact_address_inline
+msgid "Inlined Complete Address"
+msgstr "Adreça completa en una línia"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_company_form_openeducat_core
+msgid "Institute Detail"
+msgstr "Dades del centre"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__vies_valid
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__vies_valid
+msgid "Intra-Community Valid"
+msgstr "Validesa intracomunitària"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__invoice_warn
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__invoice_warn
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__invoice_edi_format_store
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__invoice_edi_format_store
+msgid "Invoice Edi Format Store"
+msgstr "Factures en format EDI"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__invoice_sending_method
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__invoice_sending_method
+msgid "Invoice sending"
+msgstr "Enviament de factura"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__invoice_template_pdf_report_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__invoice_template_pdf_report_id
+msgid "Invoice template"
+msgstr "Plantilla de factura"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__invoice_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__invoice_ids
+msgid "Invoices"
+msgstr "Factures"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__is_coa_installed
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__is_coa_installed
+msgid "Is Coa Installed"
+msgstr "Està instal·lat el pla comptable?"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__is_flexible
+msgid "Is Flexible"
+msgstr "És flexible"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__message_is_follower
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__message_is_follower
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__message_is_follower
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__message_is_follower
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__message_is_follower
+msgid "Is Follower"
+msgstr "És seguidor"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__is_fully_flexible
+msgid "Is Fully Flexible"
+msgstr "És totalment flexible"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__is_public
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__is_public
+msgid "Is Public"
+msgstr "És públic"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__is_subordinate
+msgid "Is Subordinate"
+msgstr "És subordinat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__is_company
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__is_company
+msgid "Is a Company"
+msgstr "És una Empresa "
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__function
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__job_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__function
+msgid "Job Position"
+msgstr "Lloc de treball"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__job_title
+msgid "Job Title"
+msgstr "Títol del treball"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__journal_item_count
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__journal_item_count
+msgid "Journal Items"
+msgstr "Apunts comptables"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__lang
+msgid "Lang"
+msgstr "llenguatge"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__lang
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_search
+msgid "Language"
+msgstr "Idioma"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.kanban_view_student
+msgid "Language:"
+msgstr "Idioma:"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__last_activity
+msgid "Last Activity"
+msgstr "Última activitat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__last_activity_time
+msgid "Last Activity Time"
+msgstr "Últim temps de l'activitat"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
+msgid "Last Name"
+msgstr "Cognom"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__write_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_op_category__write_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__write_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course_topic__write_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__write_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__write_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student_course__write_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject__write_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__write_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty__write_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty_employee__write_uid
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_student__write_uid
+msgid "Last Updated by"
+msgstr "Última actualització per"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__write_date
+#: model:ir.model.fields,field_description:openeducat_core.field_op_category__write_date
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__write_date
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course_topic__write_date
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__write_date
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__write_date
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student_course__write_date
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject__write_date
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__write_date
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty__write_date
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty_employee__write_date
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_student__write_date
+msgid "Last Updated on"
+msgstr "Última actualització el"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__lastname
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__lastname
+msgid "Last name"
+msgstr "Cognoms"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__calendar_last_notif_ack
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__calendar_last_notif_ack
+msgid "Last notification marked as read from base Calendar"
+msgstr "Última notificació marcada com a llegida des de la base del calendari"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__lastname_required
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__lastname_required
+msgid "Lastname Required"
+msgstr "Cognoms obligatori"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__magento_address_bind_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__magento_address_bind_ids
+msgid "Magento Address Bindings"
+msgstr "Vincles d'adreça amb Magento"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__magento_bind_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__magento_bind_ids
+msgid "Magento Bindings"
+msgstr "Vincles amb Magento"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "Mail:"
+msgstr "Correu:"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Adjunt principal"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__gender__m
+msgid "Male"
+msgstr "Masculí"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__parent_id
+msgid "Manager"
+msgstr "Gestor"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__marital
+msgid "Marital Status"
+msgstr "Estat civil"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__max_unit_load
+msgid "Maximum Unit Load"
+msgstr "Càrrega màxima de crèdits"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__meeting_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__meeting_ids
+msgid "Meetings"
+msgstr "Reunions"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__member_of_department
+msgid "Member of department"
+msgstr "Membre del departament"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__message_has_error
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__message_has_error
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__message_has_error
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__message_has_error
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__message_has_error
+msgid "Message Delivery error"
+msgstr "Error d'entrega del missatge"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__invoice_warn_msg
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__invoice_warn_msg
+msgid "Message for Invoice"
+msgstr "Missatge per a factura"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__purchase_warn_msg
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__purchase_warn_msg
+msgid "Message for Purchase Order"
+msgstr "Missatge per a la comanda de la compra"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__sale_warn_msg
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__sale_warn_msg
+msgid "Message for Sales Order"
+msgstr "Missatge de comanda de vendes"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__picking_warn_msg
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__picking_warn_msg
+msgid "Message for Stock Picking"
+msgstr "Missatge per a empaquetat d'estoc"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__message_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__message_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__message_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__message_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__message_ids
+msgid "Messages"
+msgstr "Missatges"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__min_unit_load
+msgid "Minimum Unit Load"
+msgstr "Càrrega mínima de crèdits"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__mobile
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__mobile
+msgid "Mobile"
+msgstr "Mòbil"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.kanban_view_faculty
+#: model_terms:ir.ui.view,arch_db:openeducat_core.kanban_view_student
+msgid "Mobile:"
+msgstr "Mòbil:"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__my_activity_date_deadline
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Venciment de l'activitat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_category__name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course_topic__name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject__name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__nationality
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_search
+msgid "Nationality"
+msgstr "Nacionalitat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__country_id
+msgid "Nationality (Country)"
+msgstr "Nacionalitat (País)"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__newly_hired
+msgid "Newly Hired"
+msgstr "S'ha contractat recentment"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_calendar_event_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Proper esdeveniment del calendari d'activitats"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_date_deadline
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Data límit de la següent activitat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_summary
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resum de la següent activitat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_type_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_type_id
+msgid "Next Activity Type"
+msgstr "Tipus de la següent activitat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__email_normalized
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__email_normalized
+msgid "Normalized Email"
+msgstr "Correu normalitzat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__not_in_mod347
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__not_in_mod347
+msgid "Not included in 347 report"
+msgstr "No inclosa en el model 347"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__comment
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__notes
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__comment
+msgid "Notes"
+msgstr "Notas"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__message_needaction_counter
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__message_needaction_counter
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__message_needaction_counter
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__message_needaction_counter
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'accions"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__children
+msgid "Number of Dependent Children"
+msgstr "Nombre de fills dependents"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__mandate_count
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__mandate_count
+msgid "Number of Mandates"
+msgstr "Número de mandats"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__reminder_date_before_receipt
+#: model:ir.model.fields,help:openeducat_core.field_op_student__reminder_date_before_receipt
+msgid "Number of days to send reminder email before the promised receipt date"
+msgstr ""
+"Nombre de dies per enviar un email de recordatori abans de la data de "
+"recepció promesa"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__message_has_error_counter
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__message_has_error_counter
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__message_has_error_counter
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__message_has_error_counter
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d'errors"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_batch__message_needaction_counter
+#: model:ir.model.fields,help:openeducat_core.field_op_course__message_needaction_counter
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__message_needaction_counter
+#: model:ir.model.fields,help:openeducat_core.field_op_student__message_needaction_counter
+#: model:ir.model.fields,help:openeducat_core.field_op_subject_registration__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Nombre de missatges que requereixen una acció"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_batch__message_has_error_counter
+#: model:ir.model.fields,help:openeducat_core.field_op_course__message_has_error_counter
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__message_has_error_counter
+#: model:ir.model.fields,help:openeducat_core.field_op_student__message_has_error_counter
+#: model:ir.model.fields,help:openeducat_core.field_op_subject_registration__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de missatges amb error d'entrega"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__blood_group__o+
+msgid "O+ve"
+msgstr "O+"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__blood_group__o-
+msgid "O-ve"
+msgstr "O-"
+
+#. module: openeducat_core
+#: model_terms:ir.actions.act_window,help:openeducat_core.act_open_op_student_view
+msgid ""
+"Odoo le ayuda a rastrear fácilmente toda la actividad relacionada a\n"
+"                    un estudiante: discusiones, cursos,\n"
+"                    documentos, etc."
+msgstr ""
+"L'Odoo et permet seguir tota l'activitat d'un estudiant: converses, cursos, "
+"documents, etc."
+
+#. module: openeducat_core
+#: model_terms:ir.actions.act_window,help:openeducat_core.act_open_op_faculty_view
+msgid ""
+"Odoo le ayuda a rastrear fácilmente toda la actividad relacionada a\n"
+"                    un profesor: discusiones, cursos,\n"
+"                    documentos, etc."
+msgstr ""
+"L'Odoo et permet seguir tota l'activitat d'un professor: converses, cursos, "
+"documents, etc."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__on_time_rate
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__on_time_rate
+msgid "On-Time Delivery Rate"
+msgstr "Taxa d'entrega en el temps"
+
+#. module: openeducat_core
+#: model:ir.module.category,name:openeducat_core.module_category_openeducat
+#: model:ir.ui.menu,name:openeducat_core.menu_op_school_root
+msgid "OpenEduCat"
+msgstr "OpenEduCat"
+
+#. module: openeducat_core
+#: model:ir.module.category,name:openeducat_core.module_category_openeducat_others
+msgid "OpenEduCat Others"
+msgstr "OpenEduCat — Altres"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_student__gender__o
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_subject__type__other
+msgid "Other"
+msgstr "Altres"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__on_time_rate
+#: model:ir.model.fields,help:openeducat_core.field_op_student__on_time_rate
+msgid ""
+"Over the past x days; the number of products received on time divided by the"
+" number of ordered products.x is either the System Parameter "
+"purchase_stock.on_time_delivery_days or the default 365"
+msgstr ""
+"Durant els últims x dies, el nombre de productes rebuts a temps dividit pel "
+"nombre de productes demanats.x és el paràmetre "
+"purchase_stock.on_time_delivery_days del sistema o 365"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__pin
+msgid "PIN"
+msgstr "PIN"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__pin
+msgid ""
+"PIN used to Check In/Out in the Kiosk Mode of the Attendance application (if"
+" enabled in Configuration) and to change the cashier in the Point of Sale "
+"application."
+msgstr ""
+"PIN que s'utilitza per facturar/sortir en el Mode Kiosko de l'aplicació "
+"d'assistència (si està activat a Configuració) i per canviar el caixer a "
+"l'aplicació punt de venda."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__parent_name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__parent_name
+msgid "Parent name"
+msgstr "Nom pare"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__partner_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__partner_id
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__partner_company_registry_placeholder
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__partner_company_registry_placeholder
+msgid "Partner Company Registry Placeholder"
+msgstr "Marcador de posició per al registre mercantil del contacte"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__contract_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__contract_ids
+msgid "Partner Contracts"
+msgstr "Contractes de contactes"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__use_partner_credit_limit
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__use_partner_credit_limit
+msgid "Partner Limit"
+msgstr "Límit del partner"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__partner_vat_placeholder
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__partner_vat_placeholder
+msgid "Partner Vat Placeholder"
+msgstr "Marcador de posició per al NIF del contacte"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__same_company_registry_partner_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__same_company_registry_partner_id
+msgid "Partner with same Company Registry"
+msgstr "Col·laborar amb el mateix registre d'empreses"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__same_vat_partner_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__same_vat_partner_id
+msgid "Partner with same Tax ID"
+msgstr "Contacte amb la mateixa identificació fiscal"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__user_partner_id
+msgid "Partner-related data of the user"
+msgstr "Dades de l'usuari relatiu a l'empresa"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__passport_id
+msgid "Passport No"
+msgstr "Núm. Passaport"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__debit_limit
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__debit_limit
+msgid "Payable Limit"
+msgstr "Límit a pagar"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__payment_token_count
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__payment_token_count
+msgid "Payment Token Count"
+msgstr "Comptador del testimoni de pagament"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__payment_token_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__payment_token_ids
+msgid "Payment Tokens"
+msgstr "Taulers de pagament"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__perform_vies_validation
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__perform_vies_validation
+msgid "Perform Vies Validation"
+msgstr "Efectuar validació VIES"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
+msgid "Personal Information"
+msgstr "Informació personal"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__phone
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__phone
+msgid "Phone"
+msgstr "Telèfon"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__phone_sanitized_blacklisted
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__phone_sanitized_blacklisted
+msgid "Phone Blacklisted"
+msgstr "Telèfon a la llista negra"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__phone_mobile_search
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__phone_mobile_search
+msgid "Phone/Mobile"
+msgstr "Telèfon/Mòbil"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "Phone:"
+msgstr "Telèfon:"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__place_of_birth
+msgid "Place of Birth"
+msgstr "Lloc de naixement"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_subject__type__practical
+msgid "Practical"
+msgstr "Pràctica"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__property_outbound_payment_method_line_id
+#: model:ir.model.fields,help:openeducat_core.field_op_student__property_outbound_payment_method_line_id
+msgid ""
+"Preferred payment method when buying from this vendor. This will be set by "
+"default on all outgoing payments created for this vendor"
+msgstr ""
+"Mètode de pagament preferit en comprar a aquest proveïdor. Aquest es "
+"configurarà per defecte en tots els pagaments sortints creats per a aquest "
+"proveïdor."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__property_inbound_payment_method_line_id
+#: model:ir.model.fields,help:openeducat_core.field_op_student__property_inbound_payment_method_line_id
+msgid ""
+"Preferred payment method when selling to this customer. This will be set by "
+"default on all incoming payments created for this customer"
+msgstr ""
+"Mètode de pagament preferit en vendre a aquest client. Aquest es configurarà"
+" per defecte en tots els pagaments entrants creats per a aquest client."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__property_product_pricelist
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__property_product_pricelist
+msgid "Pricelist"
+msgstr "Tarifa"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__private_car_plate
+msgid "Private Car Plate"
+msgstr "Placa del vehicle privat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__private_city
+msgid "Private City"
+msgstr "Ciutat Privada"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__private_country_id
+msgid "Private Country"
+msgstr "País Privat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__private_email
+msgid "Private Email"
+msgstr "Correu electrònic privat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__private_phone
+msgid "Private Phone"
+msgstr "Telèfon privat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__private_state_id
+msgid "Private State"
+msgstr "Estat Privat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__private_street
+msgid "Private Street"
+msgstr "Direcció  Privat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__private_street2
+msgid "Private Street2"
+msgstr "Direcció Privat 2"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__private_zip
+msgid "Private Zip"
+msgstr "Zip privat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__employee_properties
+msgid "Properties"
+msgstr "Propietats"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__property_inbound_payment_method_line_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__property_inbound_payment_method_line_id
+msgid "Property Inbound Payment Method Line"
+msgstr "Línia de mètode de pagament entrant de la propietat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__property_outbound_payment_method_line_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__property_outbound_payment_method_line_id
+msgid "Property Outbound Payment Method Line"
+msgstr "Línia de mètode de pagament sortint de la propietat"
+
+#. module: openeducat_core
+#. odoo-javascript
+#: code:addons/openeducat_core/static/src/xml/base.xml:0
+msgid "Provided by"
+msgstr "Impartit per"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__purchase_line_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__purchase_line_ids
+msgid "Purchase Lines"
+msgstr "Línies de compra"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__purchase_order_count
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__purchase_order_count
+msgid "Purchase Order Count"
+msgstr "Recompte de comandes de compra"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__purchase_warn
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__purchase_warn
+msgid "Purchase Order Warning"
+msgstr "Avís de la comanda de compra"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__rating_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__rating_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__rating_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__rating_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__rating_ids
+msgid "Ratings"
+msgstr "Valoracions"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__real_estate_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__real_estate_ids
+msgid "Real Estate"
+msgstr "Immobiliària"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__receipt_reminder_email
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__receipt_reminder_email
+msgid "Receipt Reminder"
+msgstr "Recordatori de rebut"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__ref
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__ref
+msgid "Reference"
+msgstr "Referència"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_form
+msgid "Reject"
+msgstr "Rebutjat"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_subject_registration__state__rejected
+msgid "Rejected"
+msgstr "Rebutjada"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__parent_id
+msgid "Related Company"
+msgstr "Empresa relacionada"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__related_partners_count
+msgid "Related Partners Count"
+msgstr "Nre. de contactes relacionats"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__employee_ids
+#: model:ir.model.fields,help:openeducat_core.field_op_student__employee_ids
+msgid "Related employees based on their private address"
+msgstr "Empleats relacionats en funció de la seva adreça privada"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_form
+msgid "Reset to Draft"
+msgstr "Restablir com a esborrany"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__resource_id
+msgid "Resource"
+msgstr "Recurs"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__activity_user_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__activity_user_id
+msgid "Responsible User"
+msgstr "Usuari responsable"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__resume_line_ids
+msgid "Resume lines"
+msgstr "Reprèn les línies"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student_course__roll_number
+msgid "Roll Number"
+msgstr "Núm. de llista"
+
+#. module: openeducat_core
+#: model:ir.model.constraint,message:openeducat_core.constraint_op_student_course_unique_name_roll_number_id
+msgid "Roll Number & Student must be unique per Batch!"
+msgstr "El núm. de llista i l'estudiant han de ser únics per convocatòria."
+
+#. module: openeducat_core
+#: model:ir.model.constraint,message:openeducat_core.constraint_op_student_course_unique_name_roll_number_course_id
+msgid "Roll Number must be unique per Batch!"
+msgstr "El núm. de llista ha de ser únic per convocatòria."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__sinid
+msgid "SIN No"
+msgstr "Núm. SIN"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__message_has_sms_error
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__message_has_sms_error
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__message_has_sms_error
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__message_has_sms_error
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Error de lliurament SMS"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__ssnid
+msgid "SSN No"
+msgstr "Núm. Seg. Social"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__sale_order_count
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__sale_order_count
+msgid "Sale Order Count"
+msgstr "Nombre de comandes"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__sale_order_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__sale_order_ids
+msgid "Sales Order"
+msgstr "Comanda"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__sale_warn
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__sale_warn
+msgid "Sales Warnings"
+msgstr "Avisos de vendes"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__user_id
+msgid "Salesperson"
+msgstr "Comercial"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__phone_sanitized
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__phone_sanitized
+msgid "Sanitized Number"
+msgstr "Número Sanitat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__study_school
+msgid "School"
+msgstr "Escola"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__coach_id
+msgid ""
+"Select the \"Employee\" who is the coach of this employee.\n"
+"The \"Coach\" has no specific rights or responsibilities by default."
+msgstr ""
+"Seleccioneu el \"Empleat\" que és l'entrenador d'aquest empleat.\n"
+"El \"Coach\" no té drets ni responsabilitats específiques per defecte."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__customer_payment_mode_id
+#: model:ir.model.fields,help:openeducat_core.field_op_student__customer_payment_mode_id
+msgid "Select the default payment mode for this customer."
+msgstr "Seleccioneu el mode de pagament per defecte per a aquest client."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__supplier_payment_mode_id
+#: model:ir.model.fields,help:openeducat_core.field_op_student__supplier_payment_mode_id
+msgid "Select the default payment mode for this supplier."
+msgstr "Seleccioneu el mode de pagament per defecte per a aquest proveïdor."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__invoice_warn
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__picking_warn
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__purchase_warn
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__sale_warn
+#: model:ir.model.fields,help:openeducat_core.field_op_student__invoice_warn
+#: model:ir.model.fields,help:openeducat_core.field_op_student__picking_warn
+#: model:ir.model.fields,help:openeducat_core.field_op_student__purchase_warn
+#: model:ir.model.fields,help:openeducat_core.field_op_student__sale_warn
+msgid ""
+"Selecting the \"Warning\" option will notify user with the message, "
+"Selecting \"Blocking Message\" will throw an exception with the message and "
+"block the flow. The Message has to be written in the next field."
+msgstr ""
+"Si seleccioneu l'opció \"Avís\" es notificarà als usuaris amb el missatge, "
+"si seleccioneu \"Missatge de bloqueig\" es llançarà una excepció amb el "
+"missatge i es bloquejarà el flux. El missatge s'ha d'escriure en el següent "
+"camp."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__self
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__self
+msgid "Self"
+msgstr "Si mateix"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course_topic__sequence
+msgid "Sequence"
+msgstr "Seqüència"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__use_partner_credit_limit
+#: model:ir.model.fields,help:openeducat_core.field_op_student__use_partner_credit_limit
+msgid "Set a value greater than 0.0 to activate a credit limit check"
+msgstr ""
+"Estableixi un valor major que 0,0 per activar una validació de límit de "
+"crèdit"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__partner_share
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__partner_share
+msgid "Share Partner"
+msgstr "Compartir empresa"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__share
+msgid "Share User"
+msgstr "Comparteix Usuari "
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__short_description
+msgid "Short Description"
+msgstr "Descripció curta"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__show_credit_limit
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__show_credit_limit
+msgid "Show Credit Limit"
+msgstr "Mostrar límit de crèdit"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__show_hr_icon_display
+msgid "Show Hr Icon Display"
+msgstr "Mostra la pantalla d'icones Hr"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_res_company__signature
+msgid "Signature"
+msgstr "Signatura"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__signup_type
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__signup_type
+msgid "Signup Token Type"
+msgstr "Tipus de paraula d'ingrés"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__aeat_simplified_invoice
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__aeat_simplified_invoice
+msgid "Simplified invoices in AEAT?"
+msgstr "Factures simplificades a AEAT?"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__skill_ids
+msgid "Skill"
+msgstr "Habilitat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__employee_skill_ids
+msgid "Skills"
+msgstr "Habilitats"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__sinid
+msgid "Social Insurance Number"
+msgstr "Número de la Seguritat Social."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__ssnid
+msgid "Social Security Number"
+msgstr "Número de la Seguritat Social."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__specific_property_product_pricelist
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__specific_property_product_pricelist
+msgid "Specific Property Product Pricelist"
+msgstr "Tarifa específica"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__spouse_birthdate
+msgid "Spouse Birthdate"
+msgstr "Data de naixement del cònjuge"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__spouse_complete_name
+msgid "Spouse Complete Name"
+msgstr "Nom complet del cònjuge"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__starred_message_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__starred_message_ids
+msgid "Starred Message"
+msgstr "Missatge destacat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__start_date
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_batch_search
+msgid "Start Date"
+msgstr "Data d'inici"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__state_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__state_id
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
+msgid "State"
+msgstr "Estat"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_search
+msgid "Status"
+msgstr "Estat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__activity_state
+#: model:ir.model.fields,help:openeducat_core.field_op_student__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Estat basat en activitats\n"
+"Vençuda: La data límit ja ha passat\n"
+"Avui: La data de l'activitat és avui\n"
+"Planificat: Activitats futures."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__picking_warn
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__picking_warn
+msgid "Stock Picking"
+msgstr "Empaquetat d'estoc"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__street
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__street
+msgid "Street"
+msgstr "Carrer"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__street_name
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__street_name
+msgid "Street Name"
+msgstr "Nom del carrer"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
+msgid "Street..."
+msgstr "Carrer..."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__street2
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__street2
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
+msgid "Street2"
+msgstr "2a adreça"
+
+#. module: openeducat_core
+#: model:ir.model,name:openeducat_core.model_op_student
+#: model:ir.model.fields,field_description:openeducat_core.field_magento_address__student
+#: model:ir.model.fields,field_description:openeducat_core.field_magento_res_partner__student
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__student
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__student
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student_course__student_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__student_id
+#: model:ir.model.fields,field_description:openeducat_core.field_res_partner__student
+#: model:ir.model.fields,field_description:openeducat_core.field_res_users__student
+#: model:res.groups,name:openeducat_core.group_op_student
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_search
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_tree
+msgid "Student"
+msgstr "Estudiant"
+
+#. module: openeducat_core
+#: model:ir.model,name:openeducat_core.model_op_student_course
+msgid "Student Course Details"
+msgstr "Detalls del curs de l'estudiant"
+
+#. module: openeducat_core
+#: model:ir.actions.act_window,name:openeducat_core.open_board_student
+#: model_terms:ir.ui.view,arch_db:openeducat_core.board_student_form
+msgid "Student Dashboard"
+msgstr "Tauler de l'estudiant"
+
+#. module: openeducat_core
+#: model:ir.actions.report,name:openeducat_core.action_report_student_idcard
+msgid "Student IdCard"
+msgstr "Carnet d'estudiant"
+
+#. module: openeducat_core
+#: model:ir.model.constraint,message:openeducat_core.constraint_op_student_course_unique_name_roll_number_student_id
+msgid "Student must be unique per Batch!"
+msgstr "L'estudiant no es pot repetir en la mateixa convocatòria."
+
+#. module: openeducat_core
+#: model:ir.actions.act_window,name:openeducat_core.act_open_op_student_view
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__register_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_student__student_ids
+#: model:ir.ui.menu,name:openeducat_core.menu_op_school_main
+#: model_terms:ir.ui.view,arch_db:openeducat_core.op_student_user_create_view
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_batch_form
+msgid "Students"
+msgstr "Estudiants"
+
+#. module: openeducat_core
+#: model:ir.model,name:openeducat_core.model_op_subject
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_subject_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_subject_search
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_subject_tree
+msgid "Subject"
+msgstr "Assignatura"
+
+#. module: openeducat_core
+#: model:ir.actions.act_window,name:openeducat_core.act_subject_registration_view
+#: model:ir.model,name:openeducat_core.model_op_subject_registration
+msgid "Subject Registration"
+msgstr "Matrícula d'assignatures"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject__subject_type
+msgid "Subject Type"
+msgstr "Tipus d'assignatura"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__subject_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__faculty_subject_ids
+msgid "Subject(s)"
+msgstr "Assignatura(es)"
+
+#. module: openeducat_core
+#: model:ir.actions.act_window,name:openeducat_core.act_open_op_subject_view
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student_course__subject_ids
+#: model:ir.ui.menu,name:openeducat_core.menu_op_subject_sub
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_course_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_course_form
+msgid "Subjects"
+msgstr "Assignatures"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_subject_registration_form
+msgid "Submit"
+msgstr "Publicar"
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_subject_registration__state__submitted
+msgid "Submitted"
+msgstr "Enviat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__subordinate_ids
+msgid "Subordinates"
+msgstr "Subordinats"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__summary
+msgid "Summary"
+msgstr "Resum"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__property_purchase_currency_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__property_purchase_currency_id
+msgid "Supplier Currency"
+msgstr "Divisa del proveïdor"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__supplier_payment_mode_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__supplier_payment_mode_id
+msgid "Supplier Payment Mode"
+msgstr "Mode de pagament del proveïdor"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__supplier_rank
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__supplier_rank
+msgid "Supplier Rank"
+msgstr "Rang de subministraments"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__category_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__category_ids
+msgid "Tags"
+msgstr "Etiquetes"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__vat
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__vat
+msgid "Tax ID"
+msgstr "NIF"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__vat_label
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__vat_label
+msgid "Tax ID Label"
+msgstr "Etiqueta del NIF"
+
+#. module: openeducat_core
+#. odoo-javascript
+#: code:addons/openeducat_core/static/src/xml/base.xml:0
+msgid "Tech Receptives"
+msgstr "Tech Receptives"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.kanban_view_faculty
+#: model_terms:ir.ui.view,arch_db:openeducat_core.kanban_view_student
+msgid "Tel:"
+msgstr "Telf: "
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__company_country_code
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__country_code
+#: model:ir.model.fields,help:openeducat_core.field_op_student__country_code
+msgid ""
+"The ISO country code in two chars. \n"
+"You can use this field for quick search."
+msgstr ""
+"El codi del país ISO en dos caràcters.\n"
+"Podeu utilitzar aquest camp per una recerca ràpida."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__vat
+#: model:ir.model.fields,help:openeducat_core.field_op_student__vat
+msgid ""
+"The Tax Identification Number. Values here will be validated based on the "
+"country format. You can use '/' to indicate that the partner is not subject "
+"to tax."
+msgstr ""
+"El Número d'Identificació Fiscal. Els valors aquí seran validats en funció "
+"del format del país. També pots utilitzar '/' per indicar que el contacte no"
+" està subjecte a impostos."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__property_account_position_id
+#: model:ir.model.fields,help:openeducat_core.field_op_student__property_account_position_id
+msgid ""
+"The fiscal position determines the taxes/accounts used for this contact."
+msgstr ""
+"La posició fiscal determina els impostos/ comptes usats per aquest contacte."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_student__user_id
+msgid "The internal user in charge of this contact."
+msgstr "L' usuari intern a càrrec d' aquest contacte."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__company_registry
+#: model:ir.model.fields,help:openeducat_core.field_op_student__company_registry
+msgid ""
+"The registry number of the company. Use it if it is different from the Tax "
+"ID. It must be unique across all partners of a same country"
+msgstr ""
+"El número de registre de l'empresa. Utilitzeu-lo si és diferent del NIF "
+"fiscal. Ha de ser únic entre tots els contactes d'un mateix país"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__property_stock_customer
+#: model:ir.model.fields,help:openeducat_core.field_op_student__property_stock_customer
+msgid ""
+"The stock location used as destination when sending goods to this contact."
+msgstr ""
+"La ubicació de l'estoc utilitzada com a destinació quan s'envien béns a "
+"aquest contacte."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__property_stock_supplier
+#: model:ir.model.fields,help:openeducat_core.field_op_student__property_stock_supplier
+msgid ""
+"The stock location used as source when receiving goods from this contact."
+msgstr ""
+"La ubicació d'estoc utilitzada com origen quan rep béns d'aquest contacte."
+
+#. module: openeducat_core
+#: model:ir.model.fields.selection,name:openeducat_core.selection__op_subject__type__theory
+msgid "Theory"
+msgstr "Teoria"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__property_account_payable_id
+#: model:ir.model.fields,help:openeducat_core.field_op_student__property_account_payable_id
+msgid ""
+"This account will be used instead of the default one as the payable account "
+"for the current partner"
+msgstr ""
+"Aquest compte s'utilitzarà en comptes del compte per defecte com el compte a"
+" pagar per l'empresa actual."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__property_account_receivable_id
+#: model:ir.model.fields,help:openeducat_core.field_op_student__property_account_receivable_id
+msgid ""
+"This account will be used instead of the default one as the receivable "
+"account for the current partner"
+msgstr ""
+"Aquest compte s'utilitzarà en lloc de l'establert per defecte com el compte "
+"a cobrar per l'empresa actual."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__property_purchase_currency_id
+#: model:ir.model.fields,help:openeducat_core.field_op_student__property_purchase_currency_id
+msgid ""
+"This currency will be used, instead of the default one, for purchases from "
+"the current partner"
+msgstr ""
+"S'utilitzarà aquesta moneda, en comptes de la per defecte, per compres en "
+"l'actual proveïdor"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__tz
+msgid ""
+"This field is used in order to define in which timezone the employee will "
+"work."
+msgstr "Defineix la zona horària en què treballa l'empleat."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__email_normalized
+#: model:ir.model.fields,help:openeducat_core.field_op_student__email_normalized
+msgid ""
+"This field is used to search on email address as the primary email field can"
+" contain more than strictly an email address."
+msgstr ""
+"Aquest camp s' usa per a cercar l' adreça de correu electrònic com a camp "
+"primari pot contenir més que una adreça de correu electrònic estrictament."
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "This is to certify that"
+msgstr "Es certifica que"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__property_supplier_payment_term_id
+#: model:ir.model.fields,help:openeducat_core.field_op_student__property_supplier_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for purchase "
+"orders and vendor bills"
+msgstr ""
+"S'utilitzarà aquesta condició de pagament, en lloc de la predeterminada, per"
+" les comandes de compra i les factures de proveïdor."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__property_payment_term_id
+#: model:ir.model.fields,help:openeducat_core.field_op_student__property_payment_term_id
+msgid ""
+"This payment term will be used instead of the default one for sales orders "
+"and customer invoices"
+msgstr ""
+"S'utilitzarà aquest termini de pagament en lloc del predeterminat per les "
+"comandes de venda i factures de client."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__property_product_pricelist
+#: model:ir.model.fields,help:openeducat_core.field_op_student__property_product_pricelist
+msgid ""
+"This pricelist will be used, instead of the default one, for sales to the "
+"current partner"
+msgstr ""
+"Aquesta tarifa s'utilitzarà, en lloc de la per defecte, per a les vendes de "
+"l'empresa actual."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__tz
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__tz
+msgid "Timezone"
+msgstr "Zona horària"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__tz_offset
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__tz_offset
+msgid "Timezone offset"
+msgstr "Zona horària"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__title
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__title
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
+msgid "Title"
+msgstr "Títol"
+
+#. module: openeducat_core
+#: model_terms:ir.actions.act_window,help:openeducat_core.open_board_faculty
+msgid ""
+"To add your first report into this dashboard, go to any\n"
+"                        menu, switch to list or graph view, and click\n"
+"                        <i>'Add to\n"
+"                            Dashboard'\n"
+"                        </i>\n"
+"                        in the extended search options."
+msgstr ""
+"Per afegir el teu primer informe a aquest tauler, entra en qualsevol menú, "
+"canvia a vista de llista o de gràfic i prem <i>«Afegeix al tauler»</i> a les"
+" opcions de cerca avançada."
+
+#. module: openeducat_core
+#: model_terms:ir.actions.act_window,help:openeducat_core.open_board_student
+msgid ""
+"To add your first report into this dashboard, go to any\n"
+"                        menu, switch to list or graph view, and click\n"
+"                        <i>'Add to\n"
+"                            Dashboard'</i>\n"
+"                        in the extended search options."
+msgstr ""
+"Per afegir el teu primer informe a aquest tauler, entra en qualsevol menú, "
+"canvia a vista de llista o de gràfic i prem <i>«Afegeix al tauler»</i> a les"
+" opcions de cerca avançada."
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid ""
+"To the best of my knowledge, he / she bears a Good Moral\n"
+"                                            character."
+msgstr "Segons el meu coneixement, observa bona conducta."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__topic_ids
+msgid "Topic"
+msgstr "Tema"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__total_invoiced
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__total_invoiced
+msgid "Total Invoiced"
+msgstr "Total facturat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__debit
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__debit
+msgid "Total Payable"
+msgstr "Total a pagar"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__credit
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__credit
+msgid "Total Receivable"
+msgstr "Total a cobrar"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__credit
+#: model:ir.model.fields,help:openeducat_core.field_op_student__credit
+msgid "Total amount this customer owes you."
+msgstr "Import total que aquest client li deu."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__debit
+#: model:ir.model.fields,help:openeducat_core.field_op_student__debit
+msgid "Total amount you have to pay to this vendor."
+msgstr "Import total a pagar a aquest proveïdor."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__comercial
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__comercial
+msgid "Trade name"
+msgstr "Nom comercial"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject__type
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_subject_search
+msgid "Type"
+msgstr "Tipus"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__activity_exception_decoration
+#: model:ir.model.fields,help:openeducat_core.field_op_student__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipus d'activitat d'excepció registrada."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_student__barcode
+msgid "Use a barcode to identify this contact."
+msgstr "Usa el codi de barres per a identificar aquest contacte."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__aeat_identification_type
+#: model:ir.model.fields,help:openeducat_core.field_op_student__aeat_identification_type
+msgid ""
+"Used to specify an identification type to send to AEAT. Normally for sending"
+" national and export invoices to AEAT where the customer country is not "
+"Spain, it would calculate an identification type of 04 if the VAT field is "
+"filled and 06 if it was not. This field is to specify types of 03 through "
+"05, in the event that the customer doesn't identify with a foreign VAT and "
+"instead with their passport or residential certificate. If there is no value"
+" it will work as before."
+msgstr ""
+"S'utilitza per especificar un tipus d'identificació per enviar a l'AEAT. "
+"Normalment per a l'enviament de factures nacionals i d'exportació a l'AEAT "
+"on el país del client no és Espanya, es calcularia un tipus d'identificació "
+"de 04 si el camp NIF està reomplert i 06 si no ho està. Aquest camp és per a"
+" especificar tipus del 03 al 05, en el cas que el client no s'identifiqui "
+"amb un NIF estranger i en el seu lloc ho faci amb el seu passaport o "
+"certificat de residència. Si no hi ha cap valor funcionarà com abans."
+
+#. module: openeducat_core
+#: model:ir.model,name:openeducat_core.model_res_users
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__user_id
+msgid "User"
+msgstr "Usuaris"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_res_users__user_line
+msgid "User Line"
+msgstr "Línia d'usuari"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__user_partner_id
+msgid "User's partner"
+msgstr "Contacte de l'usuari"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__user_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__user_ids
+msgid "Users"
+msgstr "Usuaris"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__property_stock_supplier
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__property_stock_supplier
+msgid "Vendor Location"
+msgstr "Ubicació del Venedor"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__property_supplier_payment_term_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__property_supplier_payment_term_id
+msgid "Vendor Payment Terms"
+msgstr "Condicions de pagament al proveïdor"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__vies_vat_to_check
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__vies_vat_to_check
+msgid "Vies Vat To Check"
+msgstr "Comprovar un número d'IVA en VIES"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__visa_expire
+msgid "Visa Expiration Date"
+msgstr "Caducitat del visat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__visa_info
+msgid "Visa Info"
+msgstr "Dades del visat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__visa_no
+msgid "Visa No"
+msgstr "Número de visat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_wizard_op_faculty_employee__user_boolean
+msgid "Want to create user too ?"
+msgstr "Voleu crear també l'usuari?"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__website
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__website
+msgid "Website Link"
+msgstr "Enllaç a Lloc Web"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_batch__website_message_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_course__website_message_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__website_message_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__website_message_ids
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__website_message_ids
+msgid "Website Messages"
+msgstr "Missatges del lloc web"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_batch__website_message_ids
+#: model:ir.model.fields,help:openeducat_core.field_op_course__website_message_ids
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__website_message_ids
+#: model:ir.model.fields,help:openeducat_core.field_op_student__website_message_ids
+#: model:ir.model.fields,help:openeducat_core.field_op_subject_registration__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de comunicacions del lloc web"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_student__tz
+msgid ""
+"When printing documents and exporting/importing data, time values are computed according to this timezone.\n"
+"If the timezone is not set, UTC (Coordinated Universal Time) is used.\n"
+"Anywhere else, time values are computed according to the time offset of your web client."
+msgstr ""
+"Quan imprimeixi documents i en exportar/importar dates, els valors de temps són posats acordant a aquest zona horària.\n"
+"Si la zona horària no aquesta assignada, UTC (Temps Coordinat Universal) serà usat.\n"
+"On sigui, el valor del temps són assignats acordant al temps compensat del web del teu client."
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__member_of_department
+msgid ""
+"Whether the employee is a member of the active user's department or one of "
+"it's child department."
+msgstr ""
+"Tant si l'empleat és un membre del departament d'usuari actiu com si és un "
+"departament infantil."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__address_id
+msgid "Work Address"
+msgstr "Adreça del treball"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__work_contact_id
+msgid "Work Contact"
+msgstr "Contacte laboral"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__work_email
+msgid "Work Email"
+msgstr "Adreça electrònica de feina"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__work_function
+msgid "Work Function"
+msgstr "Funció"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__work_location_id
+msgid "Work Location"
+msgstr "Ubicació de la feina"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__work_location_name
+msgid "Work Location Name"
+msgstr "Nom del centre de treball"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__work_location_type
+msgid "Work Location Type"
+msgstr "Tipus de centre de treball"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__mobile_phone
+msgid "Work Mobile"
+msgstr "Mòbil del treball"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__has_work_permit
+msgid "Work Permit"
+msgstr "Permís de treball"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__work_permit_expiration_date
+msgid "Work Permit Expiration Date"
+msgstr "Data de caducitat del permís de treball"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__permit_no
+msgid "Work Permit No"
+msgstr "Número de permís de treball"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__work_permit_scheduled_activity
+msgid "Work Permit Scheduled Activity"
+msgstr "Activitat programada per permís de treball"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__work_phone
+msgid "Work Phone"
+msgstr "Telèfon feina"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__resource_calendar_id
+msgid "Working Hours"
+msgstr "Horari Laboral"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
+msgid "Year"
+msgstr "Any"
+
+#. module: openeducat_core
+#: model_terms:ir.actions.act_window,help:openeducat_core.open_board_faculty
+#: model_terms:ir.actions.act_window,help:openeducat_core.open_board_student
+msgid ""
+"You can filter and group data before inserting into the\n"
+"                        dashboard using the search options."
+msgstr ""
+"Pots filtrar i agrupar les dades amb les opcions de cerca abans d'afegir-les"
+" al tauler."
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
+#: model_terms:ir.ui.view,arch_db:openeducat_core.view_op_student_form
+msgid "ZIP"
+msgstr "C.P."
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__zip_id
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__zip_id
+msgid "ZIP Location"
+msgstr "Ubicació del codi postal"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__zip
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__zip
+msgid "Zip"
+msgstr "Codi Postal"
+
+#. module: openeducat_core
+#: model:ir.model.fields,help:openeducat_core.field_op_faculty__days_sales_outstanding
+#: model:ir.model.fields,help:openeducat_core.field_op_student__days_sales_outstanding
+msgid ""
+"[(Total Receivable/Total Revenue) * number of days since the first invoice] "
+"for this customer"
+msgstr ""
+"[(Total a cobrar/Total ingressat) * número de dies des de la primera "
+"factura] per aquest client"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__invoice_edi_format
+#: model:ir.model.fields,field_description:openeducat_core.field_op_student__invoice_edi_format
+msgid "eInvoice format"
+msgstr "Format de factura electrònica"
+
+#. module: openeducat_core
+#: model_terms:ir.ui.view,arch_db:openeducat_core.op_faculty_user_create_view
+#: model_terms:ir.ui.view,arch_db:openeducat_core.op_student_user_create_view
+msgid "or"
+msgstr "o"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__state
+msgid "state"
+msgstr "Estat"
+
+#. module: openeducat_core
+#: model:ir.model.fields,field_description:openeducat_core.field_op_faculty__work_permit_name
+msgid "work_permit_name"
+msgstr "work_permit_name"

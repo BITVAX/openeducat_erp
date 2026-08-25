@@ -1,0 +1,174 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* openeducat_fees
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-25 07:37+0000\n"
+"PO-Revision-Date: 2026-08-25 07:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_fees
+#: model_terms:ir.ui.view,arch_db:openeducat_fees.view_op_student_form_fees_inherit
+msgid "<br/>Invoiced"
+msgstr "<br/>Facturado"
+
+#. module: openeducat_fees
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: openeducat_fees
+#: model:ir.model.fields.selection,name:openeducat_fees.selection__op_fees_terms__day_type__after
+msgid "After"
+msgstr "Después de"
+
+#. module: openeducat_fees
+#: model:ir.model.fields.selection,name:openeducat_fees.selection__op_fees_terms__day_type__before
+msgid "Before"
+msgstr "Antes"
+
+#. module: openeducat_fees
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: openeducat_fees
+#: model:ir.model,name:openeducat_fees.model_op_course
+msgid "Course"
+msgstr "Curso"
+
+#. module: openeducat_fees
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms__create_uid
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms_line__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: openeducat_fees
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms__create_date
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms_line__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: openeducat_fees
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms__note
+msgid "Description"
+msgstr "Descripción"
+
+#. module: openeducat_fees
+#: model_terms:ir.ui.view,arch_db:openeducat_fees.view_fees_terms_form
+msgid "Description..."
+msgstr "Descripción..."
+
+#. module: openeducat_fees
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms__display_name
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms_line__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: openeducat_fees
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms_line__due_days
+msgid "Due Days"
+msgstr "Días de vencimiento"
+
+#. module: openeducat_fees
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms_line__fees_id
+msgid "Fees"
+msgstr "Tasas"
+
+#. module: openeducat_fees
+#: model_terms:ir.ui.view,arch_db:openeducat_fees.view_fees_terms_form
+#: model_terms:ir.ui.view,arch_db:openeducat_fees.view_fees_terms_search
+#: model_terms:ir.ui.view,arch_db:openeducat_fees.view_fees_terms_tree
+msgid "Fees Reminder Terms"
+msgstr "Avisos de plazos de pago"
+
+#. module: openeducat_fees
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_course__fees_term_id
+msgid "Fees Term"
+msgstr "Plazo de pago"
+
+#. module: openeducat_fees
+#: model_terms:ir.ui.view,arch_db:openeducat_fees.view_fees_terms_form
+msgid "Fees Term Line"
+msgstr "Línea del plazo de pago"
+
+#. module: openeducat_fees
+#: model:ir.actions.act_window,name:openeducat_fees.act_open_fees_terms_view
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms__name
+#: model:ir.ui.menu,name:openeducat_fees.menu_fees_terms
+msgid "Fees Terms"
+msgstr "Plazos de pago"
+
+#. module: openeducat_fees
+#. odoo-python
+#: code:addons/openeducat_fees/models/fees_terms.py:0
+msgid "Fees Terms must be Required!"
+msgstr "Los plazos de pago son obligatorios."
+
+#. module: openeducat_fees
+#. odoo-python
+#: code:addons/openeducat_fees/models/fees_terms.py:0
+msgid "Fees terms must be divided             as such sum up in 100%"
+msgstr "Los plazos de pago deben repartirse de forma que sumen el 100 %."
+
+#. module: openeducat_fees
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms__id
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms_line__id
+msgid "ID"
+msgstr "ID (identificación)"
+
+#. module: openeducat_fees
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms__write_uid
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms_line__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: openeducat_fees
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms__write_date
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms_line__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: openeducat_fees
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms__no_days
+msgid "No of Days"
+msgstr "Nº de días"
+
+#. module: openeducat_fees
+#: model:ir.model,name:openeducat_fees.model_op_student
+msgid "Student"
+msgstr "Estudiante"
+
+#. module: openeducat_fees
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms__line_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_fees.view_fees_terms_form
+msgid "Terms"
+msgstr "Términos"
+
+#. module: openeducat_fees
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms__day_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: openeducat_fees
+#: model:ir.model.fields,field_description:openeducat_fees.field_op_fees_terms_line__value
+msgid "Value (%)"
+msgstr "Valor (%)"
+
+#. module: openeducat_fees
+#: model:ir.model,name:openeducat_fees.model_op_fees_terms
+msgid "op.fees.terms"
+msgstr "op.fees.terms"
+
+#. module: openeducat_fees
+#: model:ir.model,name:openeducat_fees.model_op_fees_terms_line
+msgid "op.fees.terms.line"
+msgstr "op.fees.terms.line"
