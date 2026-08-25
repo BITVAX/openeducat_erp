@@ -89,27 +89,25 @@
 <!--                                       options="{&quot;terminology&quot;: &quot;archive&quot;}"/>-->
 <!--                            </button>-->
                         </div>
-<!--                        <field name="image" widget="image" class="oe_left oe_avatar"/>-->
+                        <!-- Igual que en la ficha del alumno: en v12 el campo era
+                             `image` y en v18 es `image_1920` (delegado de
+                             res.partner). Se comentó al migrar en vez de
+                             renombrarse, y la ficha se quedó sin foto. -->
+                        <field name="image_1920" widget="image" class="oe_avatar"
+                               options="{'preview_image': 'image_128'}"/>
                         <field name="name" invisible="1"/>
                         <field name="partner_id" invisible="not partner_id" required="partner_id" readonly="partner_id"/>
                         <div class="oe_title">
                             <!-- <h1> <field name="title" placeholder="Title" style="width: 
                                 30%" /> </h1> -->
-                            <h1>
-                                <table>
-                                    <tr>
-                                        <td style="padding-right:10px">
-                                            <field name="firstname" required="1"
-                                                   placeholder="First Name"/>
-                                        </td>
-                                        <!-- <td style="padding-right:10px"><field name="middle_name" 
-                                            placeholder="Middle Name" /></td> -->
-                                        <td style="padding-right:10px">
-                                            <field name="lastname" placeholder="Last Name"/>
-                                        </td>
-
-                                    </tr>
-                                </table>
+                            <!-- Como en la ficha del alumno: fuera la <table> de v12 y
+                                 ancho acotado, porque en v18 el título es siempre un
+                                 campo editable y sin acotarlo se estira a media ficha. -->
+                            <h1 class="d-flex gap-2">
+                                <field name="firstname" required="1"
+                                       style="width: 11rem" placeholder="First Name"/>
+                                <field name="lastname" placeholder="Last Name"
+                                       style="width: 20rem"/>
                             </h1>
                         </div>
                         <field name="contact_address"/>

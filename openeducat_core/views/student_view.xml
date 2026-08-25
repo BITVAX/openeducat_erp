@@ -99,43 +99,66 @@
                                 invisible="not already_partner" />
                         </div>
                         <field name="name" invisible="1" />
-<!--                        <field name="image" widget="image" class="oe_left oe_avatar" />-->
+                        <!-- La foto: en v12 era `image`, que en v18 pasó a ser
+                             `image_1920` (delegado de res.partner). Al migrar se
+                             comentó en vez de renombrarse, y por eso la ficha
+                             salía sin foto. -->
+                        <field name="image_1920" widget="image" class="oe_avatar"
+                            options="{'preview_image': 'image_128'}" />
                         <div class="oe_title">
                             <h3>
                                 <field name="title" placeholder="Title" />
                             </h3>
-                            <h1>
-                                <table>
-                                    <tr>
-                                        <td style="padding-right:10px;">
-                                            <field name="firstname" required="1"
-                                                placeholder="First Name" />
-                                        </td>
-                                        <!-- <td style="padding-right:10px;"> <field name="middle_name" 
-                                            placeholder="Middle Name" /> </td> -->
-                                        <td style="padding-right:10px;">
-                                            <field name="lastname" placeholder="Last Name"
-                                                required="1" />
-                                        </td>
-                                    </tr>
-                                </table>
+                            <!-- Nombre y apellidos en la misma línea. En v12 esto
+                                 era una <table> de una fila; el renderizador de v18
+                                 no la trata como maquetación del título y rompía la
+                                 tipografía. `d-flex` da el mismo resultado con los
+                                 campos directamente dentro del h1, que es lo que el
+                                 tema espera. El ancho se acota a mano porque v18 ya
+                                 no tiene modo lectura: el título es siempre un
+                                 <input>, y sin acotarlo cada uno se estira a media
+                                 ficha y el apellido acaba a un palmo del nombre. Y sin
+                                 `w-auto`: Bootstrap lo declara `width:auto!important`
+                                 y el !important gana al estilo en línea, con lo que el
+                                 ancho de abajo no llegaría a aplicarse. -->
+                            <h1 class="d-flex gap-2">
+                                <field name="firstname" required="1"
+                                    style="width: 11rem" placeholder="First Name" />
+                                <field name="lastname" placeholder="Last Name"
+                                    style="width: 20rem" required="1" />
                             </h1>
                         </div>
                         <group name="personal_information" string="Personal Information">
-                            <group col="4" colspan="4" name="personal_detail">
+                            <!-- v12 pintaba estos once campos con `col="4"`: dos pares
+                                 etiqueta/valor por fila y a todo el ancho. En v18 el
+                                 ancho sale de `12 * colspan / col_del_padre`, aquí
+                                 12*4/2 = 24, y Bootstrap solo define hasta 12: la
+                                 clase no existe, el navegador la ignora, el bloque se
+                                 va a ancho completo y empuja la dirección abajo. Dos
+                                 subgrupos dan la misma rejilla que v12 sin depender de
+                                 colspan. El reparto respeta el orden por filas que
+                                 tenía v12: email/NIF, teléfono/contacto de emergencia,
+                                 idioma/fecha de nacimiento, nacionalidad/categoría,
+                                 sexo/grupo sanguíneo. -->
+                            <group name="personal_detail">
                                 <field name="email" required="1" />
-                                <field name="vat" required="1" />
                                 <field name="phone" />
-                                <field name="emergency_contact" context="{'show_address': 1}"
-                                    options="{&quot;always_reload&quot;: True}" />
                                 <field name="lang" />
-                                <field name="birth_date" />
                                 <field name="nationality" />
-                                <field name="category_id" />
                                 <field name="gender" />
-                                <field name="blood_group" />
                                 <field name="visa_info" />
                             </group>
+                            <group name="personal_detail_right">
+                                <field name="vat" required="1" />
+                                <field name="emergency_contact" context="{'show_address': 1}"
+                                    options="{&quot;always_reload&quot;: True}" />
+                                <field name="birth_date" />
+                                <field name="category_id" />
+                                <field name="blood_group" />
+                            </group>
+                        </group>
+                        <!-- La dirección va en su propio bloque, debajo, como en v12. -->
+                        <group name="address_block">
                             <group name="address">
                                 <label for="street" string="Address" />
                                 <div name="div_address">
@@ -159,15 +182,15 @@
                                 </div>
                             </group>
                         </group>
-                        <notebook colspan="4">
+                        <notebook>
                             <page name="educational" string="Educational">
-                                <!-- <group col="4" colspan="4"> <field name="gr_no" /> </group> -->
-                                <group>
-                                    <separator string="Admission Details"
-                                        colspan="4" />
-                                    <field name="course_detail_ids" nolabel="1"
-                                        context="{'from_student':1,'default_student_id':id}" />
-                                </group>
+                                <!-- El separador y la lista van sueltos en la página:
+                                     dentro de un <group> el separador heredaba el
+                                     mismo cálculo de colspan roto y partía la tabla
+                                     por la mitad. -->
+                                <separator string="Admission Details" />
+                                <field name="course_detail_ids" nolabel="1"
+                                    context="{'from_student':1,'default_student_id':id}" />
                             </page>
                         </notebook>
                     </sheet>
