@@ -24,7 +24,12 @@
                     <sheet>
 
                         <div class="oe_title">
-                            <label class="oe_edit_only" for="name" />
+                            <!-- Sin el <label>: `oe_edit_only` solo se oculta bajo
+                                 `o_form_readonly`, y desde v17 el formulario nace en
+                                 EDICIÓN en vez de en lectura, así que en esta ficha la
+                                 etiqueta pasó a verse siempre encima del título.
+                                 Ojo, la clase NO está muerta: en un formulario que sí
+                                 sea de solo lectura (`edit="0"`) sigue funcionando. -->
                             <h1>
                                 <field name="name" placeholder="Course Name" />
                             </h1>
