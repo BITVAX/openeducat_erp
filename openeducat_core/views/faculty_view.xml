@@ -20,12 +20,13 @@
                                 <div class="oe_kanban_details">
                                     <h4>
                                         <a type="open">
-                                            <field name="firstname"/>
-                                            <!-- <t t-if="record.middle_name.raw_value">
-                                                <field name="middle_name" /> </t> -->
-                                            <t t-if="record.lastname.raw_value">
-                                                <field name="lastname"/>
-                                            </t>
+                                            <!-- Un solo campo, como en el kanban de
+                                                 estudiantes. Con firstname y lastname en
+                                                 dos <field> separados por salto de linea,
+                                                 OWL descarta el nodo de texto que hay
+                                                 entre ellos (solo espacios CON salto de
+                                                 linea) y los dos <span> salen pegados. -->
+                                            <field name="name"/>
                                         </a>
                                     </h4>
                                     <ul>
